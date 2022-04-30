@@ -2,14 +2,17 @@ import React from 'react'
 import BeforeAfterSlider from 'react-before-after-slider'
 
 const SpecialDeal = () => {
-    const before =
-        'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'
-    const after =
-        'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'
+    const before1 = 'https://i.ibb.co/4jbcw5m/3.png'
+    const after1 = 'https://i.ibb.co/PhTfHqt/4.png'
+    const before2 = 'https://i.ibb.co/QdkZjNj/1.png'
+    const after2 = 'https://i.ibb.co/2Z6x9fn/2.png'
+    const before3 = 'https://i.ibb.co/6mgtx8M/1.png'
+    const after3 = 'https://i.ibb.co/Fxb2MFW/2.png'
+
     return (
         <div className="md:h-[110vh] relative bg-[#F3EFEC]">
             <div>
-                <h1 className="text-6xl  text-white  text-center pt-40 font-bold">
+                <h1 className="text-6xl  text-green-500  text-center pt-40 font-bold">
                     Special Deal
                 </h1>
                 <div className="-rotate-12 md:mt-0 mt-28 md:absolute left-44 top-44 ">
@@ -24,8 +27,8 @@ const SpecialDeal = () => {
                 <div>
                     <div className="rounded-2 mx-auto max-w-[316px] border-yellow-400 border-8">
                         <BeforeAfterSlider
-                            before={before}
-                            after={after}
+                            before={before1}
+                            after={after1}
                             width={300}
                             height={480}
                         />
@@ -33,10 +36,10 @@ const SpecialDeal = () => {
                     <p className="text-center">10% off</p>
                 </div>
                 <div>
-                    <div className="rounded-2 mx-auto max-w-[316px] border-white border-8">
+                    <div className="rounded-2 mx-auto max-w-[316px] border-gray-300 border-8">
                         <BeforeAfterSlider
-                            before={before}
-                            after={after}
+                            before={before2}
+                            after={after2}
                             width={300}
                             height={480}
                         />
@@ -46,8 +49,8 @@ const SpecialDeal = () => {
                 <div>
                     <div className="rounded-2 mx-auto max-w-[316px] border-yellow-400 border-8">
                         <BeforeAfterSlider
-                            before={before}
-                            after={after}
+                            before={before3}
+                            after={after3}
                             width={300}
                             height={480}
                         />
