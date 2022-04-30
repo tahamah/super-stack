@@ -15,10 +15,10 @@ const SpecialDeal = () => {
                 <h1 className="text-6xl  text-green-500  text-center pt-40 font-bold">
                     Special Deal
                 </h1>
-                <div class="flex justify-center mx-auto mt-6">
-                    <span class="inline-block w-4 h-2 bg-yellow-400 rounded-full"></span>
-                    <span class="inline-block w-16 h-2 mx-1 bg-yellow-400 rounded-full"></span>
-                    <span class="inline-block w-40 h-2 bg-yellow-400 rounded-full"></span>
+                <div className="flex justify-center mx-auto mt-6">
+                    <span className="inline-block w-4 h-2 bg-yellow-400 rounded-full"></span>
+                    <span className="inline-block w-16 h-2 mx-1 bg-yellow-400 rounded-full"></span>
+                    <span className="inline-block w-40 h-2 bg-yellow-400 rounded-full"></span>
                 </div>
 
                 <div className="-rotate-12 md:mt-0 mt-28 md:absolute left-44 top-44 ">

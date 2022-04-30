@@ -8,10 +8,10 @@ const StockGallery = () => {
                     <h1 className="text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800">
                         Stock Gallery
                     </h1>
-                    <div class="flex justify-center mx-auto mt-6">
-                        <span class="inline-block w-44 h-2 bg-red-500 rounded-full"></span>
-                        <span class="inline-block w-20 h-2 mx-1 bg-red-500 rounded-full"></span>
-                        <span class="inline-block w-12 h-2 bg-red-500 rounded-full"></span>
+                    <div className="flex justify-center mx-auto mt-6">
+                        <span className="inline-block w-44 h-2 bg-red-500 rounded-full"></span>
+                        <span className="inline-block w-20 h-2 mx-1 bg-red-500 rounded-full"></span>
+                        <span className="inline-block w-12 h-2 bg-red-500 rounded-full"></span>
                     </div>
                 </div>
                 <div className="2xl:px-20 lg:px-12 px-4 flex flex-wrap items-start mt-4">
@@ -33,7 +33,7 @@ const StockGallery = () => {
                         <div className="flex  items-center justify-end my-6">
                             <img
                                 tabIndex={0}
-                                className="rounded-2"
+                                className="rounded-lg"
                                 src="https://i.ibb.co/dt6tCgn/gm-2.png"
                                 alt="guy smiling"
                             />
@@ -42,7 +42,7 @@ const StockGallery = () => {
                             <img
                                 tabIndex={0}
                                 src="https://i.ibb.co/ZTCKnSB/gm-3.png"
-                                alt="girl with bluw background"
+                                alt="girl with  background"
                                 className="w-48 h-48 rounded-lg"
                             />
                             <img
