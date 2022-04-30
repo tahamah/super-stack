@@ -10,7 +10,7 @@ const SpecialDeal = () => {
     const after3 = 'https://i.ibb.co/Fxb2MFW/2.png'
 
     return (
-        <div className="md:h-[110vh] relative bg-[#F3EFEC]">
+        <div className="md:h-[110vh] relative bg-[#F9FAFB]">
             <div>
                 <h1 className="text-6xl  text-green-500  text-center pt-40 font-bold">
                     Special Deal
