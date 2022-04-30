@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
+import ManageAll from './components/ManageAll/ManageAll'
 import Navbar from './components/NavBar/Navbar'
 import NotFound from './components/NotFound/NotFound'
 
@@ -12,7 +13,8 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="home" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/manageAll" element={<ManageAll />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />

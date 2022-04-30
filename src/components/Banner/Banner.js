@@ -3,7 +3,7 @@ import Typical from 'react-typical'
 
 const Banner = () => {
     return (
-        <div className="bg-[#f3efec] md:h-[100vh] -z-20">
+        <div className="bg-[#f3efec] md:h-[110vh] -z-20">
             <div className=" mx-auto max-w-[1920px] md:relative ">
                 <div className="md:flex pt-24  md:h-[80vh] max-w-[1500px] mx-auto ">
                     <div className="w-2/3 ">
@@ -14,7 +14,7 @@ const Banner = () => {
                         />
                     </div>
                     <div className="w-2/3 z-10 flex mt-[20vh]">
-                        <div className="text-red-600">
+                        <div className="text-red-600 min-h-screen">
                             <p className="text-lime-300 font-bold text-7xl">
                                 Stay Connect With Alu
                             </p>

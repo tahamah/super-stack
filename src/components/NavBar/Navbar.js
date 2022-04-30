@@ -5,7 +5,7 @@ const Navbar = () => {
     const [show, setShow] = useState(null)
 
     return (
-        <div className="bg-gray-200 z-50 h-full w-full">
+        <div className="bg-gray-200 sticky top-0 z-50 h-full w-full">
             {/* Code block starts */}
             <nav className="w-full bg-white hidden xl:block shadow">
                 <div className="container px-6 h-16 flex justify-between items-center lg:items-stretch mx-auto">
@@ -17,7 +17,9 @@ const Navbar = () => {
                         </div>
                         <ul className="hidden xl:flex items-center h-full">
                             <li className="cursor-pointer h-full flex items-center text-sm text-indigo-700 tracking-normal transition duration-150 ease-in-out">
-                                Home
+                                <Link to="/" className="cursor-pointer">
+                                    Home
+                                </Link>
                             </li>
                             <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 mx-10 tracking-normal transition duration-150 ease-in-out">
                                 Products
@@ -32,14 +34,14 @@ const Navbar = () => {
                     </div>
                     <div className="h-full hidden xl:flex items-center justify-end">
                         <div className="h-full flex">
-                            <div className="px-6 h-full  justify-center  text-gray-400 flex items-center">
-                                hello
-                            </div>
-                            <div className="w-20 h-full flex items-center justify-center  text-gray-400">
-                                hello
+                            <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
+                                My Items
                             </div>
                             <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
                                 Hello
+                            </div>
+                            <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
+                                <Link to="/manageAll">Manage All</Link>
                             </div>
                             <div className="flex items-center pl-8 relative">
                                 <img
