@@ -1,24 +1,19 @@
 import React from 'react'
 
-const OurWorkers = () => {
+const StockGallery = () => {
     return (
         <div className="md:h-[110vh]">
             <div className="bg-gray-50 py-20 flex flex-col items-center justify-center">
                 <div className="xl:w-1/2 w-11/12">
                     <h1 className="text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800">
-                        Our Stock Gallery
+                        Stock Gallery
                     </h1>
                     <div class="flex justify-center mx-auto mt-6">
                         <span class="inline-block w-44 h-2 bg-red-500 rounded-full"></span>
-                        <span class="inline-block w-16 h-2 mx-1 bg-red-500 rounded-full"></span>
-                        <span class="inline-block w-5 h-2 bg-red-500 rounded-full"></span>
+                        <span class="inline-block w-20 h-2 mx-1 bg-red-500 rounded-full"></span>
+                        <span class="inline-block w-12 h-2 bg-red-500 rounded-full"></span>
                     </div>
                 </div>
-                {/* https://i.ibb.co/dt6tCgn/gm-2.png
-https://i.ibb.co/ZTCKnSB/gm-3.png
-https://i.ibb.co/FKS4SyL/gm-4.png
-https://i.ibb.co/KWrLCKP/gm-1.png
-https://i.ibb.co/mC8qrfR/gm-5.png */}
                 <div className="2xl:px-20 lg:px-12 px-4 flex flex-wrap items-start mt-4">
                     <div className="mt-24">
                         <div className="flex items-end ">
@@ -135,4 +130,4 @@ https://i.ibb.co/mC8qrfR/gm-5.png */}
     )
 }
 
-export default OurWorkers
+export default StockGallery

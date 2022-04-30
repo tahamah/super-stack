@@ -15,6 +15,12 @@ const SpecialDeal = () => {
                 <h1 className="text-6xl  text-green-500  text-center pt-40 font-bold">
                     Special Deal
                 </h1>
+                <div class="flex justify-center mx-auto mt-6">
+                    <span class="inline-block w-4 h-2 bg-yellow-400 rounded-full"></span>
+                    <span class="inline-block w-16 h-2 mx-1 bg-yellow-400 rounded-full"></span>
+                    <span class="inline-block w-40 h-2 bg-yellow-400 rounded-full"></span>
+                </div>
+
                 <div className="-rotate-12 md:mt-0 mt-28 md:absolute left-44 top-44 ">
                     <img
                         className=" -rotate-12"
@@ -33,7 +39,7 @@ const SpecialDeal = () => {
                             height={480}
                         />
                     </div>
-                    <p className="text-center">10% off</p>
+                    <p className="text-center">50% off for 50kg</p>
                 </div>
                 <div>
                     <div className="rounded-2 mx-auto max-w-[316px] border-gray-300 border-8">
@@ -44,7 +50,7 @@ const SpecialDeal = () => {
                             height={480}
                         />
                     </div>
-                    <p className="text-center">10% off</p>
+                    <p className="text-center">50% off for 100kg</p>
                 </div>
                 <div>
                     <div className="rounded-2 mx-auto max-w-[316px] border-yellow-400 border-8">
@@ -55,7 +61,7 @@ const SpecialDeal = () => {
                             height={480}
                         />
                     </div>
-                    <p className="text-center">10% off</p>
+                    <p className="text-center">50% off for 100 dozen </p>
                 </div>
             </div>
         </div>
