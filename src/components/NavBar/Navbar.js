@@ -5,7 +5,7 @@ const Navbar = () => {
     const [show, setShow] = useState(null)
 
     return (
-        <div className="bg-gray-200 sticky top-0 z-50 h-full w-full">
+        <div className="bg-gray-200 md:sticky md:top-0  z-50 h-full w-full">
             {/* Code block starts */}
             <nav className="w-full bg-white hidden xl:block shadow">
                 <div className="container px-6 h-16 flex justify-between items-center lg:items-stretch mx-auto">
@@ -99,13 +99,13 @@ const Navbar = () => {
                 <div
                     className={
                         show
-                            ? 'absolute xl:hidden duration-500 w-full h-full transform -translate-x-0 z-40'
-                            : 'absolute xl:hidden duration-500 w-full h-full transform -translate-x-full z-40'
+                            ? 'absolute xl:hidden duration-500 w-full h-full left-0  z-40'
+                            : 'absolute xl:hidden duration-500 w-full h-full -left-[400px] z-40'
                     }
                     id="mobile-nav"
                 >
                     <div
-                        className="bg-white opacity-0 w-full h-full"
+                        className="bg-white opacity-50 w-full h-full"
                         onClick={() => setShow(!show)}
                     />
                     <div className="w-64 z-40 fixed overflow-y-auto  top-0 bg-white shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-500 ease-in-out">

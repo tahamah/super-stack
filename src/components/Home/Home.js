@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Banner from '../Banner/Banner'
 import FourItems from '../FourItems/FourItems'
 import OurWorkers from '../OurWorkers/OurWorkers'
 import ServiceProvide from '../ServiceProvide/ServiceProvide'
-import StartBusiness from '../StartBusiness/StartBusiness'
+import SpecialDeal from '../SpecialDeal/SpecialDeal'
 
 const Home = () => {
     return (
@@ -12,7 +12,7 @@ const Home = () => {
             <FourItems />
             <OurWorkers />
             <ServiceProvide />
-            <StartBusiness />
+            <SpecialDeal />
         </div>
     )
 }

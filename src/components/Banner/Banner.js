@@ -27,9 +27,9 @@ const Banner = () => {
                                     wrapper="b"
                                     steps={[
                                         'Won Free Dalivery',
-                                        1000,
+                                        4000,
                                         'Hello world!',
-                                        1000,
+                                        2000,
                                     ]}
                                 />
                             </span>

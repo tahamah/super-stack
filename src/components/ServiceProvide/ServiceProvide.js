@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServiceProvide = () => {
     return (
-        <div className="md:h-[100vh]">
+        <div className="md:h-[110vh]">
             <div className="xl:px-20 px-6 py-20 xl:mx-auto xl:container">
                 <h1 className="xl:text-5xl md:text-4xl text-2xl font-semibold leading-tight text-center text-gray-800 sm:mb-0 mb-12">
                     More Than 10 Years We Provide Service{' '}
