@@ -1,98 +1,268 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-
+//bg-[#51AA1C]
 const Navbar = () => {
+    const [show, setShow] = useState(null)
+
     return (
-        <nav className="bg-[#51AA1C] shadow sticky top-0  z-50">
-            <div className="container px-6 py-4 mx-auto">
-                <div className="md:flex md:items-center md:justify-between">
-                    <div className="flex items-center justify-between">
-                        <div className="text-xl font-semibold text-white">
-                            <Link
-                                className="text-2xl font-bold text-white transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-white dark:hover:text-gray-300"
-                                to="/"
-                            >
-                                Brand
-                            </Link>
+        <div className="bg-gray-200 z-50 h-full w-full">
+            {/* Code block starts */}
+            <nav className="w-full bg-white hidden xl:block shadow">
+                <div className="container px-6 h-16 flex justify-between items-center lg:items-stretch mx-auto">
+                    <div className="flex items-center">
+                        <div className="mr-10 flex items-center">
+                            <h3 className="text-base text-gray-800 font-bold tracking-normal leading-tight ml-3 hidden lg:block">
+                                Brand Name
+                            </h3>
                         </div>
-
-                        <div className="flex md:hidden">
-                            <button
-                                type="button"
-                                className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
-                                aria-label="toggle menu"
-                            >
-                                <svg
-                                    viewBox="0 0 24 24"
-                                    className="w-6 h-6 fill-current"
-                                >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                                    ></path>
-                                </svg>
-                            </button>
-                        </div>
+                        <ul className="hidden xl:flex items-center h-full">
+                            <li className="cursor-pointer h-full flex items-center text-sm text-indigo-700 tracking-normal transition duration-150 ease-in-out">
+                                Home
+                            </li>
+                            <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 mx-10 tracking-normal transition duration-150 ease-in-out">
+                                Products
+                            </li>
+                            <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 mr-10 tracking-normal transition duration-150 ease-in-out">
+                                Blog
+                            </li>
+                            <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 tracking-normal transition duration-150 ease-in-out">
+                                Deliverables
+                            </li>
+                        </ul>
                     </div>
-
-                    <div className="flex-1 md:flex md:items-center md:justify-between">
-                        <div className="flex flex-col -mx-4 md:flex-row md:items-center md:mx-8">
-                            <Link
-                                to="/"
-                                className="px-2 py-1 mx-2 mt-2 text-sm font-medium text-white transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-yellow-500 dark:hover:bg-gray-700"
-                            >
-                                Join Slack
-                            </Link>
-                            <Link
-                                to="/"
-                                className="px-2 py-1 mx-2 mt-2 text-sm font-medium text-white transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-yellow-500 dark:hover:bg-gray-700"
-                            >
-                                Browse Topics
-                            </Link>
-                            <Link
-                                to="/"
-                                className="px-2 py-1 mx-2 mt-2 text-sm font-medium text-white transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-yellow-500 dark:hover:bg-gray-700"
-                            >
-                                Random Item
-                            </Link>
-                            <Link
-                                to="/"
-                                className="px-2 py-1 mx-2 mt-2 text-sm font-medium text-white transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-yellow-500 dark:hover:bg-gray-700"
-                            >
-                                Experts
-                            </Link>
-                        </div>
-
-                        <div className="flex items-center mt-4 md:mt-0">
-                            <button
-                                className="px-2 py-1 mx-2 mt-2 text-sm font-medium text-white transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-yellow-500 dark:hover:bg-gray-700"
-                                aria-label="show notifications"
-                            >
-                                Login
-                            </button>
-
-                            <button
-                                type="button"
-                                className="flex items-center focus:outline-none"
-                                aria-label="toggle profile dropdown"
-                            >
-                                <div className="w-8 h-8 overflow-hidden border-2 border-gray-400 rounded-full">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-                                        className="object-cover w-full h-full"
-                                        alt="avatar"
-                                    />
-                                </div>
-
-                                <h3 className="mx-2 text-sm font-medium text-white dark:text-gray-200 md:hidden">
-                                    Khatab wedaa
-                                </h3>
-                            </button>
+                    <div className="h-full hidden xl:flex items-center justify-end">
+                        <div className="h-full flex">
+                            <div className="px-6 h-full  justify-center  text-gray-400 flex items-center">
+                                hello
+                            </div>
+                            <div className="w-20 h-full flex items-center justify-center  text-gray-400">
+                                hello
+                            </div>
+                            <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
+                                Hello
+                            </div>
+                            <div className="flex items-center pl-8 relative">
+                                <img
+                                    className="rounded-full h-10 w-10 object-cover"
+                                    src="https://tuk-cdn.s3.amazonaws.com/assets/components/horizontal_navigation/hn_1.png"
+                                    alt="logo"
+                                />
+                                <p className="text-gray-800 text-sm ml-2">
+                                    Jane Doe
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+            {/* Navbar */}
+            <nav>
+                <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center bg-white fixed top-0 z-40">
+                    <div className="w-24">logo</div>
+                    <div>
+                        <div
+                            id="menu"
+                            className="text-gray-800"
+                            onClick={() => setShow(!show)}
+                        >
+                            {show ? (
+                                ' '
+                            ) : (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="icon icon-tabler icon-tabler-menu-2"
+                                    width={24}
+                                    height={24}
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
+                                    <path
+                                        stroke="none"
+                                        d="M0 0h24v24H0z"
+                                        fill="none"
+                                    />
+                                    <line x1={4} y1={6} x2={20} y2={6} />
+                                    <line x1={4} y1={12} x2={20} y2={12} />
+                                    <line x1={4} y1={18} x2={20} y2={18} />
+                                </svg>
+                            )}
+                        </div>
+                    </div>
+                </div>
+                {/*Mobile responsive sidebar*/}
+                <div
+                    className={
+                        show
+                            ? 'absolute xl:hidden duration-500 w-full h-full transform -translate-x-0 z-40'
+                            : 'absolute xl:hidden duration-500 w-full h-full transform -translate-x-full z-40'
+                    }
+                    id="mobile-nav"
+                >
+                    <div
+                        className="bg-white opacity-0 w-full h-full"
+                        onClick={() => setShow(!show)}
+                    />
+                    <div className="w-64 z-40 fixed overflow-y-auto  top-0 bg-white shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-500 ease-in-out">
+                        <div className="px-6 h-full">
+                            <div className="flex flex-col justify-between h-full w-full">
+                                <div>
+                                    <div className="mt-6 flex w-full items-center justify-between">
+                                        <div className="flex items-center justify-between w-full">
+                                            <div className="flex items-center">
+                                                <p className="text-base text-gray-800 ml-3">
+                                                    The North
+                                                </p>
+                                            </div>
+                                            <div
+                                                id="cross"
+                                                className="text-gray-800"
+                                                onClick={() => setShow(!show)}
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    className="icon icon-tabler icon-tabler-x"
+                                                    width={24}
+                                                    height={24}
+                                                    viewBox="0 0 24 24"
+                                                    strokeWidth="1.5"
+                                                    stroke="currentColor"
+                                                    fill="none"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                >
+                                                    <path
+                                                        stroke="none"
+                                                        d="M0 0h24v24H0z"
+                                                    />
+                                                    <line
+                                                        x1={18}
+                                                        y1={6}
+                                                        x2={6}
+                                                        y2={18}
+                                                    />
+                                                    <line
+                                                        x1={6}
+                                                        y1={6}
+                                                        x2={18}
+                                                        y2={18}
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul className="f-m-m">
+                                        <Link to="/" className="cursor-pointer">
+                                            <li className="text-gray-800 pt-8">
+                                                <div className="flex items-center">
+                                                    <p className="text-indigo-700 xl:text-base text-base ml-3">
+                                                        Home
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </Link>
+                                        <Link to="/" className="cursor-pointer">
+                                            <li className="text-gray-800 pt-8">
+                                                <div className="flex items-center justify-between">
+                                                    <div className="flex items-center">
+                                                        <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                            Products
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </Link>
+                                        <Link to="/" className="cursor-pointer">
+                                            <li className="text-gray-800 pt-8">
+                                                <div className="flex items-center">
+                                                    <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                        Performance
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </Link>
+                                        <li className="text-gray-800 pt-8 cursor-pointer">
+                                            <div className="flex items-center justify-between">
+                                                <div className="flex items-center">
+                                                    <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                        Deliverables
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="w-full pt-4">
+                                    <div className="border-t border-gray-300">
+                                        <div className="w-full flex items-center justify-between pt-1">
+                                            <div className="flex items-center">
+                                                <img
+                                                    alt="profile-pic"
+                                                    src="https://tuk-cdn.s3.amazonaws.com/assets/components/boxed_layout/bl_1.png"
+                                                    className="w-8 h-8 rounded-full"
+                                                />
+                                                <p className=" text-gray-800 text-base leading-4 ml-2">
+                                                    Taha
+                                                </p>
+                                            </div>
+                                            <ul className="flex">
+                                                <li className="cursor-pointer text-gray-800 pt-5 pb-3">
+                                                    <div className="w-6 h-6 md:w-8 md:h-8">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            className="icon icon-tabler icon-tabler-messages"
+                                                            viewBox="0 0 24 24"
+                                                            strokeWidth={1}
+                                                            stroke="currentColor"
+                                                            fill="none"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                        >
+                                                            <path
+                                                                stroke="none"
+                                                                d="M0 0h24v24H0z"
+                                                            />
+                                                            <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+                                                            <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+                                                        </svg>
+                                                    </div>
+                                                </li>
+                                                <li className="cursor-pointer text-gray-800 pt-5 pb-3 pl-3">
+                                                    <div className="w-6 h-6 md:w-8 md:h-8">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            className="icon icon-tabler icon-tabler-bell"
+                                                            viewBox="0 0 24 24"
+                                                            strokeWidth={1}
+                                                            stroke="currentColor"
+                                                            fill="none"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                        >
+                                                            <path
+                                                                stroke="none"
+                                                                d="M0 0h24v24H0z"
+                                                            />
+                                                            <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                                                            <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                                                        </svg>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            {/* Sidebar ends */}
+            {/* Code block ends */}
+        </div>
     )
 }
 
