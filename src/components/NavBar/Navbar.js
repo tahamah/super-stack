@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
+import { useAuthState } from 'react-firebase-hooks/auth'
+import { signOut } from 'firebase/auth'
 import { Link } from 'react-router-dom'
+import auth from '../../Firebase/Firebase'
 //bg-[#51AA1C]
 const Navbar = () => {
     const [show, setShow] = useState(null)
-
+    const [user, loading, error] = useAuthState(auth)
+    const userName = user?.displayName
+    const photo = user?.photoURL
+    const photoDefult = 'https://i.ibb.co/JpYnxyW/defult-User.png'
     return (
         <div className="bg-gray-200 md:sticky md:top-0  z-50 h-full w-full">
             {/* Code block starts */}
@@ -44,17 +50,23 @@ const Navbar = () => {
                                 <Link to="/manageAll">Manage All</Link>
                             </div>
                             <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
-                                <Link to="/login">Log In</Link>
+                                {user ? (
+                                    <span onClick={() => signOut(auth)}>
+                                        Log Out
+                                    </span>
+                                ) : (
+                                    <Link to="/login">Log In</Link>
+                                )}
                             </div>
                             <div className="flex items-center pl-8 relative">
                                 <img
-                                    className="rounded-full border-lime-200 border-4 h-10 w-10 object-cover"
-                                    src="https://tuk-cdn.s3.amazonaws.com/assets/components/horizontal_navigation/hn_1.png"
-                                    alt="logo"
+                                    className="rounded-full  h-10 w-10 object-cover"
+                                    src={user ? photo : photoDefult}
+                                    alt="Profile"
                                 />
 
                                 <p className="text-gray-400 ml-5 font-bold">
-                                    Taha
+                                    {user ? userName : 'User'}
                                 </p>
                             </div>
                         </div>
