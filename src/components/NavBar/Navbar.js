@@ -33,24 +33,28 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="h-full hidden xl:flex items-center justify-end">
-                        <div className="h-full flex">
+                        <div className="h-full gap-x-5 flex">
                             <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
                                 My Items
                             </div>
                             <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
-                                Hello
+                                Add Items
                             </div>
                             <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
                                 <Link to="/manageAll">Manage All</Link>
                             </div>
+                            <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
+                                <Link to="/login">Log In</Link>
+                            </div>
                             <div className="flex items-center pl-8 relative">
                                 <img
-                                    className="rounded-full h-10 w-10 object-cover"
+                                    className="rounded-full border-lime-200 border-4 h-10 w-10 object-cover"
                                     src="https://tuk-cdn.s3.amazonaws.com/assets/components/horizontal_navigation/hn_1.png"
                                     alt="logo"
                                 />
-                                <p className="text-gray-800 text-sm ml-2">
-                                    Jane Doe
+
+                                <p className="text-gray-400 ml-5 font-bold">
+                                    Taha
                                 </p>
                             </div>
                         </div>
@@ -191,6 +195,33 @@ const Navbar = () => {
                                                 <div className="flex items-center">
                                                     <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
                                                         Deliverables
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li className="text-gray-800 pt-8 cursor-pointer">
+                                            <div className="flex items-center justify-between">
+                                                <div className="flex items-center">
+                                                    <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                        My Items
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li className="text-gray-800 pt-8 cursor-pointer">
+                                            <div className="flex items-center justify-between">
+                                                <div className="flex items-center">
+                                                    <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                        Add Items
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li className="text-gray-800 pt-8 cursor-pointer">
+                                            <div className="flex items-center justify-between">
+                                                <div className="flex items-center">
+                                                    <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                        Manage All
                                                     </p>
                                                 </div>
                                             </div>

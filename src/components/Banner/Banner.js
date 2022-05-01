@@ -14,21 +14,19 @@ const Banner = () => {
                         />
                     </div>
                     <div className="w-2/3 z-10 flex mt-[20vh]">
-                        <div className="text-red-600 min-h-screen">
-                            <p className="text-lime-300 font-bold text-7xl">
-                                Stay Connect With Alu
+                        <div className="text-red-600 text-5xl md:text-7xl mx-10 md:mx-0 min-h-[400px]">
+                            <p className="text-lime-300 font-bold ">
+                                Stay Connected
                             </p>
-                            <p className="text-lime-300 font-bold text-7xl">
-                                &&
-                            </p>
-                            <span className="text-yellow-400  text-7xl">
+                            <p className="text-lime-300 font-bold ">&&</p>
+                            <span className="text-yellow-400  ">
                                 <Typical
                                     loop={Infinity}
                                     wrapper="b"
                                     steps={[
-                                        'Won Free Dalivery',
+                                        'Make your business  easy!',
                                         4000,
-                                        'Hello world!',
+                                        'Grow your business!',
                                         2000,
                                     ]}
                                 />
