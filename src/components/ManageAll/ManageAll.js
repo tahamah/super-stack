@@ -28,7 +28,7 @@ const ManageAll = () => {
             <div className="mx-auto container bg-white dark:bg-gray-800 shadow rounded">
                 <div className="flex flex-col lg:flex-row p-4 lg:p-8 justify-between items-start lg:items-stretch w-full">
                     <div className="w-full lg:w-1/3 flex flex-col lg:flex-row items-start lg:items-center">
-                        <div className="flex items-center">
+                        <div className="flex items-center text-2xl">
                             Products: {products.length}
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const ManageAll = () => {
                             </button>
                             <Link
                                 to="/addItems"
-                                className="text-white ml-4 cursor-pointer focus:outline-none border border-transparent focus:border-gray-800 focus:shadow-outline-gray bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 w-8 h-8 rounded flex items-center justify-center"
+                                className="text-white  ml-4 cursor-pointer focus:outline-none border border-transparent focus:border-gray-800 focus:shadow-outline-gray bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 w-8 h-8 rounded flex items-center justify-center"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -71,10 +71,14 @@ const ManageAll = () => {
 
                                 <th className="text-gray-600 dark:text-gray-400 font-normal pr-6 text-left text-sm tracking-normal leading-4">
                                     <p>Name</p>
-                                    <p>Supplier Name</p>
+                                    <small>Supplier Name</small>
+                                </th>
+                                <th className="text-gray-600 dark:text-gray-400 font-normal pr-6 text-left text-sm tracking-normal hidden md:block leading-4">
+                                    <p>Description</p>
                                 </th>
                                 <th className="text-gray-600 dark:text-gray-400 font-normal pr-6 text-left text-sm tracking-normal leading-4">
-                                    Price
+                                    <p> Price</p>
+                                    <small> unit</small>
                                 </th>
 
                                 <th className="text-gray-600 dark:text-gray-400 font-normal pr-6 text-left text-sm tracking-normal leading-4">
@@ -110,11 +114,17 @@ const ManageAll = () => {
                                             By {product.supplier_name}
                                         </small>
                                     </td>
+                                    <td className="text-sm hidden md:block mt-5 pr-6 whitespace-no-wrap text-gray-800 dark:text-gray-100 tracking-normal leading-4">
+                                        <div className="w-[300px] ">
+                                            {product.body.slice(0, 100)}
+                                        </div>
+                                    </td>
 
                                     <td className="text-sm pr-6 whitespace-no-wrap text-gray-800 dark:text-gray-100 tracking-normal leading-4">
                                         <p>${product.price}</p>
                                         <p>par {product.unit}</p>
                                     </td>
+
                                     <td className="text-sm pr-6 whitespace-no-wrap text-gray-800 dark:text-gray-100 tracking-normal leading-4">
                                         {product.quantity}
                                     </td>
