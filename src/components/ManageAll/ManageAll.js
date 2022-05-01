@@ -1,15 +1,28 @@
-import { faChildReaching, faTrashCan } from '@fortawesome/free-solid-svg-icons'
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const ManageAll = () => {
     const [products, setProducts] = useState([])
+    const [reload, setReload] = useState(true)
     useEffect(() => {
         fetch('https://agile-journey-07748.herokuapp.com/products')
             .then((res) => res.json())
             .then((data) => setProducts(data))
-    }, [])
+    }, [reload])
+
+    const handleDelete = (id) => {
+        fetch(`https://agile-journey-07748.herokuapp.com/product/${id}`, {
+            method: 'DELETE',
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data)
+                setReload(!reload)
+            })
+    }
+
     return (
         <div className="py-20 md:min-h-[110vh]">
             <div className="mx-auto container bg-white dark:bg-gray-800 shadow rounded">
@@ -107,7 +120,12 @@ const ManageAll = () => {
                                     </td>
 
                                     <td className="pr-8 relative">
-                                        <button className=" cursor-pointer focus:outline-none">
+                                        <button
+                                            onClick={() =>
+                                                handleDelete(product._id)
+                                            }
+                                            className=" cursor-pointer focus:outline-none"
+                                        >
                                             <div className="text-gray-500 p-2 border-transparent hover:text-white rounded-full border font-bold hover:bg-red-500 duration-500 cursor-pointer">
                                                 <FontAwesomeIcon
                                                     icon={faTrashCan}
