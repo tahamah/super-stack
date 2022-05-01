@@ -6,6 +6,7 @@ import LogIn from './components/LogIn/LogIn'
 import ManageAll from './components/ManageAll/ManageAll'
 import Navbar from './components/NavBar/Navbar'
 import NotFound from './components/NotFound/NotFound'
+import RequireAuth from './components/RequireAuth/RequireAuth'
 import SingUp from './components/SingUp/SingUp'
 
 function App() {
@@ -16,7 +17,14 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
-                <Route path="/manageAll" element={<ManageAll />} />
+                <Route
+                    path="/manageAll"
+                    element={
+                        <RequireAuth>
+                            <ManageAll />
+                        </RequireAuth>
+                    }
+                />
                 <Route path="/login" element={<LogIn />} />
                 <Route path="/singUp" element={<SingUp />} />
                 <Route path="*" element={<NotFound />} />
