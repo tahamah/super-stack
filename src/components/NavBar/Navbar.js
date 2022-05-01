@@ -41,10 +41,10 @@ const Navbar = () => {
                     <div className="h-full hidden xl:flex items-center justify-end">
                         <div className="h-full gap-x-5 flex">
                             <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
-                                My Items
+                                <Link to="/myItems">My Items</Link>
                             </div>
                             <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
-                                Add Items
+                                <Link to="/addItems">Add Items</Link>
                             </div>
                             <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
                                 <Link to="/manageAll">Manage All</Link>
@@ -215,7 +215,9 @@ const Navbar = () => {
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
                                                     <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
-                                                        My Items
+                                                        <Link to="/myItems">
+                                                            My Items
+                                                        </Link>
                                                     </p>
                                                 </div>
                                             </div>
@@ -224,7 +226,9 @@ const Navbar = () => {
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
                                                     <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
-                                                        Add Items
+                                                        <Link to="/addItems">
+                                                            Add Items
+                                                        </Link>
                                                     </p>
                                                 </div>
                                             </div>
@@ -233,7 +237,9 @@ const Navbar = () => {
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
                                                     <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
-                                                        Manage All
+                                                        <Link to="/manageAll">
+                                                            Manage All
+                                                        </Link>
                                                     </p>
                                                 </div>
                                             </div>
@@ -246,11 +252,15 @@ const Navbar = () => {
                                             <div className="flex items-center">
                                                 <img
                                                     alt="profile-pic"
-                                                    src="https://tuk-cdn.s3.amazonaws.com/assets/components/boxed_layout/bl_1.png"
+                                                    src={
+                                                        user
+                                                            ? photo
+                                                            : photoDefult
+                                                    }
                                                     className="w-8 h-8 rounded-full"
                                                 />
                                                 <p className=" text-gray-800 text-base leading-4 ml-2">
-                                                    Taha
+                                                    {user ? userName : 'User'}
                                                 </p>
                                             </div>
                                             <ul className="flex">
