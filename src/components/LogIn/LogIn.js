@@ -17,7 +17,6 @@ import {
 const LogIn = () => {
     const [userInfo, setUserInfo] = useState({ email: '', password: '' })
     const [error, setError] = useState({ email: '', password: '', general: '' })
-
     const [signInWithEmailAndPassword, user, loading, hookError] =
         useSignInWithEmailAndPassword(auth)
     const [signInWithGoogle, googleUser, googleLoading, googleError] =

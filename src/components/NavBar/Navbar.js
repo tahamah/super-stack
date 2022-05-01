@@ -9,7 +9,7 @@ const Navbar = () => {
     const [user, loading, error] = useAuthState(auth)
     const userName = user?.displayName
     const photo = user?.photoURL
-    const photoDefult = 'https://i.ibb.co/JpYnxyW/defult-User.png'
+    const photoDefult = 'https://i.ibb.co/kc4D42k/images.png'
     return (
         <div className="bg-gray-200 md:sticky md:top-0  z-50 h-full w-full">
             {/* Code block starts */}

@@ -13,14 +13,14 @@ const ManageAll = () => {
     }, [reload])
 
     const handleDelete = (id) => {
-        fetch(`https://agile-journey-07748.herokuapp.com/product/${id}`, {
-            method: 'DELETE',
-        })
-            .then((res) => res.json())
-            .then((data) => {
-                console.log(data)
+        const confirm = window.confirm('Are you sure you want to delete?')
+        if (confirm) {
+            fetch(`https://agile-journey-07748.herokuapp.com/product/${id}`, {
+                method: 'DELETE',
+            }).then(() => {
                 setReload(!reload)
             })
+        }
     }
 
     return (
