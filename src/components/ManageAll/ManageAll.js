@@ -1,3 +1,5 @@
+import { faChildReaching, faTrashCan } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -9,7 +11,7 @@ const ManageAll = () => {
             .then((data) => setProducts(data))
     }, [])
     return (
-        <div className="py-20 md:h-[110vh]">
+        <div className="py-20 md:min-h-[110vh]">
             <div className="mx-auto container bg-white dark:bg-gray-800 shadow rounded">
                 <div className="flex flex-col lg:flex-row p-4 lg:p-8 justify-between items-start lg:items-stretch w-full">
                     <div className="w-full lg:w-1/3 flex flex-col lg:flex-row items-start lg:items-center">
@@ -106,44 +108,10 @@ const ManageAll = () => {
 
                                     <td className="pr-8 relative">
                                         <button className=" cursor-pointer focus:outline-none">
-                                            <div className="text-red-500 p-2 border-transparent border     cursor-pointer  ">
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    className="icon cursor-pointer icon-tabler icon-tabler-trash"
-                                                    width={20}
-                                                    height={20}
-                                                    viewBox="0 0 24 24"
-                                                    strokeWidth="1.5"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                >
-                                                    <path
-                                                        stroke="none"
-                                                        d="M0 0h24v24H0z"
-                                                    />
-                                                    <line
-                                                        x1={4}
-                                                        y1={7}
-                                                        x2={20}
-                                                        y2={7}
-                                                    />
-                                                    <line
-                                                        x1={10}
-                                                        y1={11}
-                                                        x2={10}
-                                                        y2={17}
-                                                    />
-                                                    <line
-                                                        x1={14}
-                                                        y1={11}
-                                                        x2={14}
-                                                        y2={17}
-                                                    />
-                                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
-                                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
-                                                </svg>
+                                            <div className="text-gray-500 p-2 border-transparent hover:text-white rounded-full border font-bold hover:bg-red-500 duration-500 cursor-pointer">
+                                                <FontAwesomeIcon
+                                                    icon={faTrashCan}
+                                                />
                                             </div>
                                         </button>
                                     </td>
