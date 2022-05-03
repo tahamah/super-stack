@@ -9,7 +9,7 @@ const Navbar = () => {
     const [user, loading, error] = useAuthState(auth)
     const userName = user?.displayName
     const photo = user?.photoURL
-    const photoDefult = 'https://i.ibb.co/kc4D42k/images.png'
+    const photoDefault = 'https://i.ibb.co/kc4D42k/images.png'
     return (
         <div className="bg-gray-200 md:sticky md:top-0  z-50 h-full w-full">
             {/* Code block starts */}
@@ -61,7 +61,7 @@ const Navbar = () => {
                             <div className="flex items-center pl-8 relative">
                                 <img
                                     className="rounded-full  h-10 w-10 object-cover"
-                                    src={user ? photo : photoDefult}
+                                    src={user ? photo : photoDefault}
                                     alt="Profile"
                                 />
 
@@ -255,7 +255,7 @@ const Navbar = () => {
                                                     src={
                                                         user
                                                             ? photo
-                                                            : photoDefult
+                                                            : photoDefault
                                                     }
                                                     className="w-8 h-8 rounded-full"
                                                 />

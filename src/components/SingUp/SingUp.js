@@ -98,15 +98,12 @@ const SingUp = () => {
         <section className=" md:h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#000]">
             <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800  lg:max-w-4xl">
                 <div className="hidden bg-cover lg:block lg:w-1/2">
-                    <img
-                        src="https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
-                        alt=""
-                    />
+                    <img src="https://i.ibb.co/p1Cj2g7/log-in.png" alt="" />
                 </div>
                 <ToastContainer />
                 <div className="w-full px-6 py-8 md:px-8 lg:w-1/2">
                     <p className="text-4xl py-8 text-center text-gray-900 ">
-                        <FontAwesomeIcon icon={faChildReaching} /> Gym Guru
+                        Brand Name
                     </p>
 
                     <p className="text-2xl text-center text-gray-600 ">

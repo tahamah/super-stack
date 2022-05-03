@@ -114,8 +114,8 @@ const ManageAll = () => {
                                             By {product.supplier_name}
                                         </small>
                                     </td>
-                                    <td className="text-sm hidden md:block mt-5 pr-6 whitespace-no-wrap text-gray-800 dark:text-gray-100 tracking-normal leading-4">
-                                        <div className="w-[300px] ">
+                                    <td className="text-sm hidden md:block mt-5 pr-6 whitespace-no-wrap text-gray-800 max-w-[300px] dark:text-gray-100 tracking-normal leading-4">
+                                        <div className=" ">
                                             {product.body.slice(0, 100)}
                                         </div>
                                     </td>
