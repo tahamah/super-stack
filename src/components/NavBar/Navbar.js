@@ -40,15 +40,21 @@ const Navbar = () => {
                     </div>
                     <div className="h-full hidden xl:flex items-center justify-end">
                         <div className="h-full gap-x-5 flex">
-                            <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
-                                <Link to="/myItems">My Items</Link>
-                            </div>
-                            <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
-                                <Link to="/addItems">Add Items</Link>
-                            </div>
-                            <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
-                                <Link to="/manageAll">Manage All</Link>
-                            </div>
+                            {user ? (
+                                <div className="h-full gap-x-5 flex">
+                                    <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
+                                        <Link to="/myItems">My Items</Link>
+                                    </div>
+                                    <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
+                                        <Link to="/addItems">Add Items</Link>
+                                    </div>
+                                    <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
+                                        <Link to="/manageAll">Manage All</Link>
+                                    </div>
+                                </div>
+                            ) : (
+                                ''
+                            )}
                             <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
                                 {user ? (
                                     <span onClick={() => signOut(auth)}>

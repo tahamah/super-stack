@@ -2,6 +2,7 @@ import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { toast, ToastContainer } from 'react-toastify'
 
 const ManageAll = () => {
     const [products, setProducts] = useState([])
@@ -19,12 +20,14 @@ const ManageAll = () => {
                 method: 'DELETE',
             }).then(() => {
                 setReload(!reload)
+                toast('Delete successfully')
             })
         }
     }
 
     return (
         <div className="py-20 md:min-h-[110vh]">
+            <ToastContainer />
             <div className="mx-auto container bg-white dark:bg-gray-800 shadow rounded">
                 <div className="flex flex-col lg:flex-row p-4 lg:p-8 justify-between items-start lg:items-stretch w-full">
                     <div className="w-full lg:w-1/3 flex flex-col lg:flex-row items-start lg:items-center">
