@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const FourItems = () => {
     const [data, setData] = useState([])
@@ -8,6 +8,10 @@ const FourItems = () => {
             .then((res) => res.json())
             .then((data) => setData(data))
     }, [])
+    const navigate = useNavigate()
+    const navigateToUpdate = (id) => {
+        navigate(`update/${id}`)
+    }
 
     return (
         <div className="md:min-h-[150vh]  flex flex-col justify-center">
@@ -49,7 +53,10 @@ const FourItems = () => {
                                         ( {p.unit} )
                                     </span>
                                 </h1>
-                                <button className="px-2 py-1 mt-2 text-xs font-bold text-white uppercase transition-colors duration-200 transform bg-gray-800 rounded dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:bg-gray-700 ">
+                                <button
+                                    onClick={() => navigateToUpdate(p._id)}
+                                    className="px-2 py-1 mt-2 text-xs font-bold text-white uppercase transition-colors duration-200 transform bg-gray-800 rounded dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:bg-gray-700 "
+                                >
                                     Update
                                 </button>
                             </div>

@@ -13,6 +13,7 @@ import NotFound from './components/NotFound/NotFound'
 import PassReset from './components/PassReset/PassReset'
 import RequireAuth from './components/RequireAuth/RequireAuth'
 import SingUp from './components/SingUp/SingUp'
+import UpdateProduct from './components/UpdateProduct/UpdateProduct'
 
 function App() {
     return (
@@ -43,6 +44,14 @@ function App() {
                     element={
                         <RequireAuth>
                             <ManageAll />
+                        </RequireAuth>
+                    }
+                />
+                <Route
+                    path="/update/:product_id"
+                    element={
+                        <RequireAuth>
+                            <UpdateProduct />
                         </RequireAuth>
                     }
                 />
