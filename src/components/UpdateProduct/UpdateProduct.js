@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
 
 const UpdateProduct = () => {
@@ -8,6 +8,8 @@ const UpdateProduct = () => {
     const [quantityQuant, setQuantityQuant] = useState(0)
     const { product_id } = useParams()
     const [addQuantity, setAddQuantity] = useState(0)
+    const navigate = useNavigate()
+
     const handAdd = () => {
         if (parseInt(addQuantity) > 0) {
             const newQuantity = parseInt(addQuantity) + quantityQuant
@@ -27,10 +29,10 @@ const UpdateProduct = () => {
                 .then((response) => response.json())
                 .then((json) => {
                     toast(
-                        <div class="flex w-full max-w-sm mx-auto  bg-white ">
-                            <div class="flex rounded-l items-center justify-center w-12 bg-emerald-500">
+                        <div className="flex w-full max-w-sm mx-auto  bg-white ">
+                            <div className="flex rounded-l items-center justify-center w-12 bg-emerald-500">
                                 <svg
-                                    class="w-6 h-6 text-white  fill-current"
+                                    className="w-6 h-6 text-white  fill-current"
                                     viewBox="0 0 40 40"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
@@ -38,12 +40,12 @@ const UpdateProduct = () => {
                                 </svg>
                             </div>
 
-                            <div class="px-4 py-2 -mx-3">
-                                <div class="mx-3">
-                                    <span class="font-semibold text-emerald-500 dark:text-emerald-400">
+                            <div className="px-4 py-2 -mx-3">
+                                <div className="mx-3">
+                                    <span className="font-semibold text-emerald-500 dark:text-emerald-400">
                                         Success
                                     </span>
-                                    <p class="text-sm text-gray-600 dark:text-gray-200">
+                                    <p className="text-sm text-gray-600 dark:text-gray-200">
                                         Successfully Added!
                                     </p>
                                 </div>
@@ -56,9 +58,9 @@ const UpdateProduct = () => {
         } else {
             toast(
                 <div className="flex w-full">
-                    <div class="flex rounded-l items-center justify-center w-12 bg-red-500">
+                    <div className="flex rounded-l items-center justify-center w-12 bg-red-500">
                         <svg
-                            class="w-6 h-6 text-white fill-current"
+                            className="w-6 h-6 text-white fill-current"
                             viewBox="0 0 40 40"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -66,12 +68,12 @@ const UpdateProduct = () => {
                         </svg>
                     </div>
 
-                    <div class="px-4 py-2 -mx-3">
-                        <div class="mx-3">
-                            <span class="font-semibold text-red-500 dark:text-red-400">
+                    <div className="px-4 py-2 -mx-3">
+                        <div className="mx-3">
+                            <span className="font-semibold text-red-500 dark:text-red-400">
                                 Ops !
                             </span>
-                            <p class="text-sm text-gray-600 dark:text-gray-200">
+                            <p className="text-sm text-gray-600 dark:text-gray-200">
                                 Please Add a positive value!
                             </p>
                         </div>
@@ -99,10 +101,10 @@ const UpdateProduct = () => {
                 .then((response) => response.json())
                 .then((json) => {
                     toast(
-                        <div class="flex w-full max-w-sm mx-auto  bg-white ">
-                            <div class="flex rounded-l items-center justify-center w-12 bg-emerald-500">
+                        <div className="flex w-full max-w-sm mx-auto  bg-white ">
+                            <div className="flex rounded-l items-center justify-center w-12 bg-emerald-500">
                                 <svg
-                                    class="w-6 h-6 text-white  fill-current"
+                                    className="w-6 h-6 text-white  fill-current"
                                     viewBox="0 0 40 40"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
@@ -110,12 +112,12 @@ const UpdateProduct = () => {
                                 </svg>
                             </div>
 
-                            <div class="px-4 py-2 -mx-3">
-                                <div class="mx-3">
-                                    <span class="font-semibold text-emerald-500 dark:text-emerald-400">
+                            <div className="px-4 py-2 -mx-3">
+                                <div className="mx-3">
+                                    <span className="font-semibold text-emerald-500 dark:text-emerald-400">
                                         Success
                                     </span>
-                                    <p class="text-sm text-gray-600 dark:text-gray-200">
+                                    <p className="text-sm text-gray-600 dark:text-gray-200">
                                         One Product Delivered!
                                     </p>
                                 </div>
@@ -128,9 +130,9 @@ const UpdateProduct = () => {
         } else {
             toast(
                 <div className="flex w-full">
-                    <div class="flex rounded-l items-center justify-center w-12 bg-red-500">
+                    <div className="flex rounded-l items-center justify-center w-12 bg-red-500">
                         <svg
-                            class="w-6 h-6 text-white fill-current"
+                            className="w-6 h-6 text-white fill-current"
                             viewBox="0 0 40 40"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -138,12 +140,12 @@ const UpdateProduct = () => {
                         </svg>
                     </div>
 
-                    <div class="px-4 py-2 -mx-3">
-                        <div class="mx-3">
-                            <span class="font-semibold text-red-500 dark:text-red-400">
+                    <div className="px-4 py-2 -mx-3">
+                        <div className="mx-3">
+                            <span className="font-semibold text-red-500 dark:text-red-400">
                                 Ops !
                             </span>
-                            <p class="text-sm text-gray-600 dark:text-gray-200">
+                            <p className="text-sm text-gray-600 dark:text-gray-200">
                                 Stock is empty!
                             </p>
                         </div>
@@ -164,16 +166,20 @@ const UpdateProduct = () => {
     return (
         <div className="md:min-h-screen">
             <ToastContainer />
-            <div class="max-w-2xl mx-auto overflow-hidden mt-16 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                <img class="object-cover w-full h-64" src={img} alt="Article" />
+            <div className="max-w-2xl mx-auto overflow-hidden mt-16 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                <img
+                    className="object-cover w-full h-64"
+                    src={img}
+                    alt="Article"
+                />
 
-                <div class="p-6">
-                    <div class="mt-4">
-                        <form className="mt-6">
+                <div className="p-6">
+                    <div className="mt-4">
+                        <div className="mt-6">
                             <div className="md:flex ">
                                 <div className="md:w-1/2">
                                     <label
-                                        for="username"
+                                        htmlFor="username"
                                         className="block text-sm text-gray-800 dark:text-gray-200"
                                     >
                                         Product Name:
@@ -191,7 +197,7 @@ const UpdateProduct = () => {
                                 </div>
                                 <div className="md:w-1/2 md:mt-0 mt-6 md:md-0  md:pl-10">
                                     <label
-                                        for="username"
+                                        htmlFor="username"
                                         className="block text-sm text-gray-800 dark:text-gray-200"
                                     >
                                         Supplier Name:
@@ -211,7 +217,7 @@ const UpdateProduct = () => {
                             <div className="mt-4">
                                 <div className="flex items-center justify-between">
                                     <label
-                                        for="password"
+                                        htmlFor="password"
                                         className="block text-sm text-gray-800 dark:text-gray-200"
                                     >
                                         Description:
@@ -234,7 +240,7 @@ const UpdateProduct = () => {
                             <div className="md:flex gap-10 mt-4">
                                 <div className="md:w-1/2 md:mt-0 mt-6 md:md-0  ">
                                     <label
-                                        for="username"
+                                        htmlFor="username"
                                         className="block text-sm text-gray-800 dark:text-gray-200"
                                     >
                                         Quantity:
@@ -251,7 +257,7 @@ const UpdateProduct = () => {
                                 </div>
                                 <div className="md:w-1/2 md:mt-0 mt-6 md:md-0  ">
                                     <label
-                                        for="username"
+                                        htmlFor="username"
                                         className="block text-sm text-gray-800 dark:text-gray-200"
                                     >
                                         Add Quantity:
@@ -279,16 +285,16 @@ const UpdateProduct = () => {
                                 </button>
                                 <button
                                     onClick={handAdd}
-                                    type="button"
+                                    type="submit"
                                     className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-green-500 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
                                 >
                                     Add Quantity
                                 </button>
                             </div>
-                            {/* <button onClick={() => navigate(-1)}>
+                            <button onClick={() => navigate(-1)}>
                                 Go Back
-                            </button> */}
-                        </form>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
