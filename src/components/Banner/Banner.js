@@ -14,7 +14,7 @@ const Banner = () => {
                         />
                     </div>
                     <div className="w-2/3 z-10 flex mt-[20vh]">
-                        <div className="text-red-600 text-5xl md:text-7xl mx-10 md:mx-0 min-h-[400px]">
+                        <div className="text-5xl md:text-7xl mx-10 md:mx-0 min-h-[400px]">
                             <p className="text-lime-300 font-bold ">
                                 Stay Connected
                             </p>
