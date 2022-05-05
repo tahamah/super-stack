@@ -13,6 +13,7 @@ import {
     useSignInWithEmailAndPassword,
     useSignInWithGoogle,
 } from 'react-firebase-hooks/auth'
+import axios from 'axios'
 
 const LogIn = () => {
     const [userInfo, setUserInfo] = useState({ email: '', password: '' })
@@ -44,7 +45,22 @@ const LogIn = () => {
 
     const handleLogIn = (e) => {
         e.preventDefault()
+        const email = userInfo.email
         signInWithEmailAndPassword(userInfo.email, userInfo.password)
+        fetch('https://agile-journey-07748.herokuapp.com/login', {
+            method: 'POST',
+            body: JSON.stringify({
+                email,
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                localStorage.setItem('accessToken', data.accessToken)
+                navigate(from)
+            })
     }
     useEffect(() => {
         const error = hookError || googleError
@@ -71,7 +87,7 @@ const LogIn = () => {
     useEffect(() => {
         const u = user || googleUser
         if (u) {
-            navigate(from)
+            // navigate(from)
         }
     }, [user, googleUser])
 

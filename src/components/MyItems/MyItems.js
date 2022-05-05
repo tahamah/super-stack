@@ -2,21 +2,39 @@ import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 import { useAuthState } from 'react-firebase-hooks/auth'
-import { Link } from 'react-router-dom'
+import { signOut } from 'firebase/auth'
+import { Link, useNavigate } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
 import auth from '../../Firebase/Firebase'
+import axios from 'axios'
 
 const MyItems = () => {
     const [products, setProducts] = useState([])
+    console.log(products)
     const [reload, setReload] = useState(true)
     const [user] = useAuthState(auth)
-    const email = user?.email
+    const navigate = useNavigate()
     useEffect(() => {
-        fetch(
-            `https://agile-journey-07748.herokuapp.com/myProducts?email=${email}`
-        )
-            .then((res) => res.json())
-            .then((data) => setProducts(data))
+        const email = user?.email
+        const url = `https://agile-journey-07748.herokuapp.com/myProducts?email=${email}`
+        const getProducts = async () => {
+            try {
+                const { data } = await axios.get(url, {
+                    headers: {
+                        authorization: `Bearer ${localStorage.getItem(
+                            'accessToken'
+                        )}`,
+                    },
+                })
+                setProducts(data)
+            } catch (error) {
+                if (error.response.status === 401 || 403) {
+                    signOut(auth)
+                    navigate('/login')
+                }
+            }
+        }
+        getProducts()
     }, [reload])
 
     const handleDelete = (id) => {

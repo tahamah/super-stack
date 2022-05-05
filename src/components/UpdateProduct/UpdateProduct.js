@@ -11,6 +11,7 @@ const UpdateProduct = () => {
     const navigate = useNavigate()
 
     const handAdd = () => {
+        const addInput = document.getElementById('addInput')
         if (parseInt(addQuantity) > 0) {
             const newQuantity = parseInt(addQuantity) + quantityQuant
             setQuantityQuant(newQuantity)
@@ -28,6 +29,7 @@ const UpdateProduct = () => {
             )
                 .then((response) => response.json())
                 .then((json) => {
+                    addInput.value = ''
                     toast(
                         <div className="flex w-full max-w-sm mx-auto  bg-white ">
                             <div className="flex rounded-l items-center justify-center w-12 bg-emerald-500">
@@ -52,8 +54,6 @@ const UpdateProduct = () => {
                             </div>
                         </div>
                     )
-
-                    console.log(json)
                 })
         } else {
             toast(
@@ -266,6 +266,7 @@ const UpdateProduct = () => {
                                         onBlur={(e) =>
                                             setAddQuantity(e.target.value)
                                         }
+                                        id="addInput"
                                         name="addQuantity"
                                         placeholder="example 132"
                                         type="number"
