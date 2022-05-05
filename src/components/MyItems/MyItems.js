@@ -9,11 +9,11 @@ import auth from '../../Firebase/Firebase'
 const MyItems = () => {
     const [products, setProducts] = useState([])
     const [reload, setReload] = useState(true)
-    const [user, loading, error] = useAuthState(auth)
+    const [user] = useAuthState(auth)
     const email = user?.email
     useEffect(() => {
         fetch(
-            `https://agile-journey-07748.herokuapp.com/products?email=${email}`
+            `https://agile-journey-07748.herokuapp.com/myProducts?email=${email}`
         )
             .then((res) => res.json())
             .then((data) => setProducts(data))
