@@ -23,6 +23,9 @@ const LogIn = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] =
         useSignInWithGoogle(auth)
     const [showPass, setShowPass] = useState(false)
+    const navigate = useNavigate()
+    const location = useLocation()
+    const from = location?.state?.from?.pathname || '/'
 
     const handEmailChange = (e) => {
         if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.target.value)) {
@@ -59,7 +62,6 @@ const LogIn = () => {
             .then((response) => response.json())
             .then((data) => {
                 localStorage.setItem('accessToken', data.accessToken)
-                navigate(from)
             })
     }
     useEffect(() => {
@@ -81,15 +83,12 @@ const LogIn = () => {
             }
         }
     }, [hookError, googleError])
-    const navigate = useNavigate()
-    const location = useLocation()
-    const from = location?.state?.from?.pathname || '/'
     useEffect(() => {
-        const u = user || googleUser
+        const u = googleUser || user
         if (u) {
-            // navigate(from)
+            navigate(from)
         }
-    }, [user, googleUser])
+    }, [googleUser, user])
 
     return (
         <section className=" md:h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#000]">
