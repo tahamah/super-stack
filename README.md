@@ -4,11 +4,11 @@
 
 Live- https://warehouse-f6a32.web.app/
 
-server- https://agile-journey-07748.herokuapp.com
+Server- https://agile-journey-07748.herokuapp.com
 
 ## About The Project:
 
-It is grocery management website.We stock product from many company and deliver many shop and super shop.The mane thing of the website is Stocking, Deliver and manage. Here is many option as if you want to Add new product, you can. or If you want to delete you can also. But the mane thing is to those you should have an account. and you should log in. Other oise You can't access those features.Hear is also a simple JWT . Then you Login It will create a JWT token.
+It is grocery management website.We stock product from many company and deliver many shop and super shop.The mane thing of the website is Stocking, Deliver and manage. Here is many option as if you want to Add new product, you can. or If you want to delete you can also. But the mane thing is to those you should have an account. and you should log in. Otherwise You can't access those features.Hear is also a simple JWT . Then you Login It will create a JWT token.
 
 ## Different Features and Functionality
 
@@ -44,6 +44,6 @@ I think for those reasons my web is Different from others.
 
 8.React-firebase-hooks
 
-9.Swiper(to do animation)
+9.Swiper (to do animation)
 
 10.React-before-after-slider
