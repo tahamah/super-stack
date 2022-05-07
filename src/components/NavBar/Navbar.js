@@ -11,30 +11,29 @@ const Navbar = () => {
     const photo = user?.photoURL
     const photoDefault = 'https://i.ibb.co/kc4D42k/images.png'
     return (
-        <div className="bg-gray-200 md:sticky md:top-0  z-50 h-full w-full">
-            {/* Code block starts */}
-            <nav className="w-full bg-white hidden xl:block shadow">
-                <div className="container px-6 h-16 flex justify-between items-center lg:items-stretch mx-auto">
+        <div className=" md:sticky md:top-0  z-50 h-full w-full">
+            <nav className="w-full bg-[#000000]  md:py-3 md:block shadow">
+                <div className="container px-6 h-16 flex justify-between items-center mx-auto">
                     <div className="flex items-center">
                         <div className="mr-10 flex items-center">
-                            <h3 className="text-base text-gray-800 font-bold tracking-normal leading-tight ml-3 hidden lg:block">
+                            <h3 className="text-2xl text-white font-bold tracking-normal leading-tight ml-3 hidden lg:block">
                                 Brand Name
                             </h3>
                         </div>
-                        <ul className="hidden xl:flex items-center h-full">
-                            <li className="cursor-pointer h-full flex items-center text-sm text-indigo-700 tracking-normal transition duration-150 ease-in-out">
+                        <ul className="hidden ml-10 md:flex gap-5 items-center h-full">
+                            <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white  ">
                                 <Link to="/" className="cursor-pointer">
                                     Home
                                 </Link>
                             </li>
-                            <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 mx-10 tracking-normal transition duration-150 ease-in-out">
-                                Products
-                            </li>
-                            <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 mr-10 tracking-normal transition duration-150 ease-in-out">
+                            <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
                                 Blog
                             </li>
-                            <li className="cursor-pointer h-full flex items-center text-sm hover:text-indigo-700 text-gray-800 tracking-normal transition duration-150 ease-in-out">
-                                Deliverables
+                            <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
+                                <Link to="/others"> Others</Link>
+                            </li>
+                            <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
+                                <Link to="/special">Special Deal</Link>
                             </li>
                         </ul>
                     </div>
@@ -42,13 +41,13 @@ const Navbar = () => {
                         <div className="h-full gap-x-5 flex">
                             {user ? (
                                 <div className="h-full gap-x-5 flex">
-                                    <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
+                                    <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-100">
                                         <Link to="/myItems">My Items</Link>
                                     </div>
-                                    <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
+                                    <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-100">
                                         <Link to="/addItems">Add Items</Link>
                                     </div>
-                                    <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
+                                    <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-100">
                                         <Link to="/manageAll">Manage All</Link>
                                     </div>
                                 </div>
@@ -57,7 +56,10 @@ const Navbar = () => {
                             )}
                             <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-400">
                                 {user ? (
-                                    <span onClick={() => signOut(auth)}>
+                                    <span
+                                        className="text-gray-100"
+                                        onClick={() => signOut(auth)}
+                                    >
                                         Log Out
                                     </span>
                                 ) : (
@@ -66,12 +68,12 @@ const Navbar = () => {
                             </div>
                             <div className="flex items-center pl-8 relative">
                                 <img
-                                    className="rounded-full  h-10 w-10 object-cover"
+                                    className="rounded-full h-10 w-10 object-cover"
                                     src={user ? photo : photoDefault}
                                     alt="Profile"
                                 />
 
-                                <p className="text-gray-400 ml-5 font-bold">
+                                <p className="text-gray-100 ml-5 font-bold">
                                     {user ? userName : 'User'}
                                 </p>
                             </div>
@@ -81,12 +83,12 @@ const Navbar = () => {
             </nav>
             {/* Navbar */}
             <nav>
-                <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center bg-white fixed top-0 z-40">
-                    <div className="w-24">logo</div>
+                <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center bg-[#000000] fixed top-0 z-40">
+                    <div className="w-24 text-white">logo</div>
                     <div>
                         <div
                             id="menu"
-                            className="text-gray-800"
+                            className="text-white"
                             onClick={() => setShow(!show)}
                         >
                             {show ? (
@@ -122,28 +124,28 @@ const Navbar = () => {
                     className={
                         show
                             ? 'absolute xl:hidden duration-500 w-full h-full left-0  z-40'
-                            : 'absolute xl:hidden duration-500 w-full h-full -left-[400px] z-40'
+                            : 'absolute xl:hidden duration-500 w-full h-full -left-[500px] z-40'
                     }
                     id="mobile-nav"
                 >
                     <div
-                        className="bg-white opacity-50 w-full h-full"
+                        className="bg-[#000000] opacity-50 w-full h-full"
                         onClick={() => setShow(!show)}
                     />
-                    <div className="w-64 z-40 fixed overflow-y-auto  top-0 bg-white shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-500 ease-in-out">
+                    <div className="w-64 z-40 fixed overflow-y-auto  top-0 bg-[#000000] shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-500 ease-in-out">
                         <div className="px-6 h-full">
                             <div className="flex flex-col justify-between h-full w-full">
                                 <div>
                                     <div className="mt-6 flex w-full items-center justify-between">
                                         <div className="flex items-center justify-between w-full">
                                             <div className="flex items-center">
-                                                <p className="text-base text-gray-800 ml-3">
+                                                <p className="text-base text-white ml-3">
                                                     The North
                                                 </p>
                                             </div>
                                             <div
                                                 id="cross"
-                                                className="text-gray-800"
+                                                className="text-white"
                                                 onClick={() => setShow(!show)}
                                             >
                                                 <svg
@@ -182,7 +184,7 @@ const Navbar = () => {
                                         <Link to="/" className="cursor-pointer">
                                             <li className="text-gray-800 pt-8">
                                                 <div className="flex items-center">
-                                                    <p className="text-indigo-700 xl:text-base text-base ml-3">
+                                                    <p className="text-white xl:text-base text-base ml-3">
                                                         Home
                                                     </p>
                                                 </div>
@@ -192,7 +194,7 @@ const Navbar = () => {
                                             <li className="text-gray-800 pt-8">
                                                 <div className="flex items-center justify-between">
                                                     <div className="flex items-center">
-                                                        <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                        <p className="text-white xl:text-base md:text-2xl text-base ml-3">
                                                             Products
                                                         </p>
                                                     </div>
@@ -200,9 +202,9 @@ const Navbar = () => {
                                             </li>
                                         </Link>
                                         <Link to="/" className="cursor-pointer">
-                                            <li className="text-gray-800 pt-8">
+                                            <li className="text-white pt-8">
                                                 <div className="flex items-center">
-                                                    <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                    <p className="text-white xl:text-base md:text-2xl text-base ml-3">
                                                         Performance
                                                     </p>
                                                 </div>
@@ -211,7 +213,7 @@ const Navbar = () => {
                                         <li className="text-gray-800 pt-8 cursor-pointer">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
-                                                    <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                    <p className="text-white xl:text-base md:text-2xl text-base ml-3">
                                                         Deliverables
                                                     </p>
                                                 </div>
@@ -220,7 +222,7 @@ const Navbar = () => {
                                         <li className="text-gray-800 pt-8 cursor-pointer">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
-                                                    <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                    <p className="text-white xl:text-base md:text-2xl text-base ml-3">
                                                         <Link to="/myItems">
                                                             My Items
                                                         </Link>
@@ -228,10 +230,10 @@ const Navbar = () => {
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="text-gray-800 pt-8 cursor-pointer">
+                                        <li className="text-white pt-8 cursor-pointer">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
-                                                    <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                    <p className="text-white xl:text-base md:text-2xl text-base ml-3">
                                                         <Link to="/addItems">
                                                             Add Items
                                                         </Link>
@@ -239,10 +241,10 @@ const Navbar = () => {
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="text-gray-800 pt-8 cursor-pointer">
+                                        <li className="text-white pt-8 cursor-pointer">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
-                                                    <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
+                                                    <p className="text-white xl:text-base md:text-2xl text-base ml-3">
                                                         <Link to="/manageAll">
                                                             Manage All
                                                         </Link>
@@ -265,12 +267,12 @@ const Navbar = () => {
                                                     }
                                                     className="w-8 h-8 rounded-full"
                                                 />
-                                                <p className=" text-gray-800 text-base leading-4 ml-2">
+                                                <p className=" text-white text-base leading-4 ml-2">
                                                     {user ? userName : 'User'}
                                                 </p>
                                             </div>
                                             <ul className="flex">
-                                                <li className="cursor-pointer text-gray-800 pt-5 pb-3">
+                                                <li className="cursor-pointer text-white pt-5 pb-3">
                                                     <div className="w-6 h-6 md:w-8 md:h-8">
                                                         <svg
                                                             xmlns="http://www.w3.org/2000/svg"

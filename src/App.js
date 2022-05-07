@@ -10,9 +10,11 @@ import ManageAll from './components/ManageAll/ManageAll'
 import MyItems from './components/MyItems/MyItems'
 import Navbar from './components/NavBar/Navbar'
 import NotFound from './components/NotFound/NotFound'
+import Others from './components/Others/Others'
 import PassReset from './components/PassReset/PassReset'
 import RequireAuth from './components/RequireAuth/RequireAuth'
 import SingUp from './components/SingUp/SingUp'
+import SpecialDeal from './components/SpecialDeal/SpecialDeal'
 import UpdateProduct from './components/UpdateProduct/UpdateProduct'
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
+                <Route path="/others" element={<Others />} />
+                <Route path="/special" element={<SpecialDeal />} />
                 <Route
                     path="/myItems"
                     element={

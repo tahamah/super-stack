@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <div>
-            <footer className="bg-white dark:bg-gray-800">
+            <footer className="bg-[#000000] ">
                 <div className="container px-6 py-4 mx-auto">
                     <div className="lg:flex">
                         <div className="w-full -mx-6 lg:w-2/5">
@@ -12,13 +12,13 @@ const Footer = () => {
                                 <div>
                                     <Link
                                         to="/"
-                                        className="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+                                        className="text-xl font-bold text-gray-800 hover:text-gray-700 dark:hover:text-gray-300"
                                     >
                                         Brand
                                     </Link>
                                 </div>
 
-                                <p className="max-w-md mt-2 text-gray-500 dark:text-gray-400">
+                                <p className="max-w-md mt-2 text-gray-500  ">
                                     Join 31,000+ other and never miss out on new
                                     tips, tutorials, and more.
                                 </p>
@@ -74,19 +74,19 @@ const Footer = () => {
                                     </h3>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                                        className="block mt-2 text-sm text-gray-600   hover:underline"
                                     >
                                         Company
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                                        className="block mt-2 text-sm text-gray-600   hover:underline"
                                     >
                                         community
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                                        className="block mt-2 text-sm text-gray-600   hover:underline"
                                     >
                                         Careers
                                     </Link>
@@ -98,19 +98,19 @@ const Footer = () => {
                                     </h3>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                                        className="block mt-2 text-sm text-gray-600   hover:underline"
                                     >
                                         Tec
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                                        className="block mt-2 text-sm text-gray-600   hover:underline"
                                     >
                                         Music
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                                        className="block mt-2 text-sm text-gray-600   hover:underline"
                                     >
                                         Videos
                                     </Link>
@@ -122,19 +122,19 @@ const Footer = () => {
                                     </h3>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                                        className="block mt-2 text-sm text-gray-600   hover:underline"
                                     >
                                         Mega cloud
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                                        className="block mt-2 text-sm text-gray-600   hover:underline"
                                     >
                                         Aperion UI
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                                        className="block mt-2 text-sm text-gray-600   hover:underline"
                                     >
                                         Meraki UI
                                     </Link>
@@ -144,10 +144,10 @@ const Footer = () => {
                                     <h3 className="text-gray-700 uppercase dark:text-white">
                                         Contact
                                     </h3>
-                                    <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                    <span className="block mt-2 text-sm text-gray-600   hover:underline">
                                         +1 526 654 8965
                                     </span>
-                                    <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                    <span className="block mt-2 text-sm text-gray-600   hover:underline">
                                         example@email.com
                                     </span>
                                 </div>

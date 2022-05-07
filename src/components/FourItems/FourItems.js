@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import useInventoriesData from '../../hooks/useInventoriesData'
 
 const FourItems = () => {
-    const [data, setData] = useState([])
-    useEffect(() => {
-        fetch('https://agile-journey-07748.herokuapp.com/fourProducts')
-            .then((res) => res.json())
-            .then((data) => setData(data))
-    }, [])
+    const [data] = useInventoriesData()
     const navigate = useNavigate()
     const navigateToUpdate = (id) => {
         navigate(`update/${id}`)

@@ -10,7 +10,6 @@ import axios from 'axios'
 
 const MyItems = () => {
     const [products, setProducts] = useState([])
-    console.log(products)
     const [reload, setReload] = useState(true)
     const [user] = useAuthState(auth)
     const navigate = useNavigate()
