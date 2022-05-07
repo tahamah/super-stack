@@ -18,12 +18,16 @@ const StockGallery = () => {
                     <div className="mt-24">
                         <div className="flex items-end ">
                             <img
+                                data-aos="fade-right"
+                                data-aos-duration="2000"
                                 tabIndex={0}
                                 src="https://i.ibb.co/8zjrQ0g/g-2.png"
                                 alt="girl with blue background"
                                 className="w-20 h-20 rounded-lg mr-6"
                             />
                             <img
+                                data-aos="fade-left"
+                                data-aos-duration="2000"
                                 tabIndex={0}
                                 src="https://i.ibb.co/bR0F26g/glx-2.png"
                                 alt="guy winking"
@@ -32,6 +36,8 @@ const StockGallery = () => {
                         </div>
                         <div className="flex  items-center justify-end my-6">
                             <img
+                                data-aos="fade-up"
+                                data-aos-duration="2000"
                                 tabIndex={0}
                                 className="rounded-lg"
                                 src="https://i.ibb.co/dt6tCgn/gm-2.png"
@@ -40,12 +46,16 @@ const StockGallery = () => {
                         </div>
                         <div className="flex items-start">
                             <img
+                                data-aos="fade-right"
+                                data-aos-duration="2000"
                                 tabIndex={0}
                                 src="https://i.ibb.co/ZTCKnSB/gm-3.png"
                                 alt="girl with  background"
                                 className="w-48 h-48 rounded-lg"
                             />
                             <img
+                                data-aos="fade-left"
+                                data-aos-duration="2000"
                                 tabIndex={0}
                                 src="https://i.ibb.co/gv6VG5G/g-3.png"
                                 alt="guy with glasses"
@@ -55,6 +65,8 @@ const StockGallery = () => {
                     </div>
                     <div className="ml-6 mt-32">
                         <img
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
                             tabIndex={0}
                             src="https://i.ibb.co/x2JFJYK/Untitled-design-4.png"
                             className="w-72 h-80 rounded-lg"
@@ -62,12 +74,16 @@ const StockGallery = () => {
                         />
                         <div className="flex items-start mt-6">
                             <img
+                                data-aos="fade-right"
+                                data-aos-duration="2000"
                                 tabIndex={0}
                                 src="https://i.ibb.co/FKS4SyL/gm-4.png"
                                 alt="girl  laughing"
                                 className="w-48 h-48 rounded-lg"
                             />
                             <img
+                                data-aos="fade-left"
+                                data-aos-duration="2000"
                                 tabIndex={0}
                                 src="https://i.ibb.co/kxZpcGZ/g-4.png"
                                 alt="guy with glasses"
@@ -79,6 +95,8 @@ const StockGallery = () => {
                         <div className="lg:flex ">
                             <div>
                                 <img
+                                    data-aos="fade-up"
+                                    data-aos-duration="2000"
                                     tabIndex={0}
                                     src="https://i.ibb.co/MPDBVMm/Untitled-design-5.png"
                                     alt="group of friends"
@@ -88,6 +106,8 @@ const StockGallery = () => {
                             <div>
                                 <div className="flex ml-6">
                                     <img
+                                        data-aos="fade-right"
+                                        data-aos-duration="2000"
                                         tabIndex={0}
                                         src="https://i.ibb.co/G2021yT/g-1.png"
                                         className="w-20 h-20 rounded-lg mt-14"
@@ -95,12 +115,16 @@ const StockGallery = () => {
                                     />
                                     <img
                                         tabIndex={0}
+                                        data-aos="fade-left"
+                                        data-aos-duration="2000"
                                         src="https://i.ibb.co/6JDbbMB/Untitled-design-6.png"
-                                        className="w-20 h-24 rounded-lg ml-6"
+                                        className="w-20 mt-5 h-24 rounded-lg ml-6"
                                         alt="woman"
                                     />
                                 </div>
                                 <img
+                                    data-aos="fade-right"
+                                    data-aos-duration="2000"
                                     tabIndex={0}
                                     src="https://i.ibb.co/2qv0W06/glx-1.png"
                                     alt="boy with blonde hair"
@@ -111,12 +135,16 @@ const StockGallery = () => {
 
                         <div className="mt-6 flex">
                             <img
+                                data-aos="fade-right"
+                                data-aos-duration="2000"
                                 tabIndex={0}
                                 className="w-48 h-48 rounded-lg"
                                 src="https://i.ibb.co/KWrLCKP/gm-1.png"
                                 alt="young girl with red hair"
                             />
                             <img
+                                data-aos="fade-left"
+                                data-aos-duration="2000"
                                 tabIndex={0}
                                 className="w-72 hidden md:block h-56 rounded-lg ml-6"
                                 src="https://i.ibb.co/mC8qrfR/gm-5.png"
