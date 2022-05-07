@@ -271,7 +271,26 @@ const Navbar = () => {
                                                     {user ? userName : 'User'}
                                                 </p>
                                             </div>
-                                            <ul className="flex">
+                                            <div>
+                                                {user ? (
+                                                    <span
+                                                        className="text-gray-100"
+                                                        onClick={() =>
+                                                            signOut(auth)
+                                                        }
+                                                    >
+                                                        Log Out
+                                                    </span>
+                                                ) : (
+                                                    <Link
+                                                        className="text-gray-100"
+                                                        to="/login"
+                                                    >
+                                                        Log In
+                                                    </Link>
+                                                )}
+                                            </div>
+                                            {/* <ul className="flex">
                                                 <li className="cursor-pointer text-white pt-5 pb-3">
                                                     <div className="w-6 h-6 md:w-8 md:h-8">
                                                         <svg
@@ -314,7 +333,7 @@ const Navbar = () => {
                                                         </svg>
                                                     </div>
                                                 </li>
-                                            </ul>
+                                            </ul> */}
                                         </div>
                                     </div>
                                 </div>

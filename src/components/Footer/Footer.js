@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <div>
-            <footer className="bg-[#000000] ">
+            <footer className="bg-[#000000] pt-20">
                 <div className="container px-6 py-4 mx-auto">
                     <div className="lg:flex">
                         <div className="w-full -mx-6 lg:w-2/5">
@@ -12,13 +12,13 @@ const Footer = () => {
                                 <div>
                                     <Link
                                         to="/"
-                                        className="text-xl font-bold text-gray-800 hover:text-gray-700 dark:hover:text-gray-300"
+                                        className="text-xl font-bold text-white hover:  dark:hover:text-gray-300"
                                     >
                                         Brand
                                     </Link>
                                 </div>
 
-                                <p className="max-w-md mt-2 text-gray-500  ">
+                                <p className="max-w-md mt-2 text-white  ">
                                     Join 31,000+ other and never miss out on new
                                     tips, tutorials, and more.
                                 </p>
@@ -26,7 +26,7 @@ const Footer = () => {
                                 <div className="flex mt-4 -mx-2">
                                     <Link
                                         to="/"
-                                        className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
+                                        className="mx-2   dark:text-gray-200 hover:text-whitedark:hover:text-gray-400"
                                         aria-label="Linkden"
                                     >
                                         <svg
@@ -39,7 +39,7 @@ const Footer = () => {
 
                                     <Link
                                         to="/"
-                                        className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
+                                        className="mx-2   dark:text-gray-200 hover:text-whitedark:hover:text-gray-400"
                                         aria-label="Facebook"
                                     >
                                         <svg
@@ -52,7 +52,7 @@ const Footer = () => {
 
                                     <Link
                                         to="/"
-                                        className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
+                                        className="mx-2   dark:text-gray-200 hover:text-whitedark:hover:text-gray-400"
                                         aria-label="Twitter"
                                     >
                                         <svg
@@ -69,85 +69,85 @@ const Footer = () => {
                         <div className="mt-6 lg:mt-0 lg:flex-1">
                             <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
                                 <div>
-                                    <h3 className="text-gray-700 uppercase dark:text-white">
+                                    <h3 className="  uppercase text-white">
                                         About
                                     </h3>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600   hover:underline"
+                                        className="block mt-2 text-sm text-white  hover:underline"
                                     >
                                         Company
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600   hover:underline"
+                                        className="block mt-2 text-sm text-white  hover:underline"
                                     >
                                         community
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600   hover:underline"
+                                        className="block mt-2 text-sm text-white  hover:underline"
                                     >
                                         Careers
                                     </Link>
                                 </div>
 
                                 <div>
-                                    <h3 className="text-gray-700 uppercase dark:text-white">
+                                    <h3 className="  uppercase text-white">
                                         Blog
                                     </h3>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600   hover:underline"
+                                        className="block mt-2 text-sm text-white  hover:underline"
                                     >
                                         Tec
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600   hover:underline"
+                                        className="block mt-2 text-sm text-white  hover:underline"
                                     >
                                         Music
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600   hover:underline"
+                                        className="block mt-2 text-sm text-white  hover:underline"
                                     >
                                         Videos
                                     </Link>
                                 </div>
 
                                 <div>
-                                    <h3 className="text-gray-700 uppercase dark:text-white">
+                                    <h3 className="  uppercase text-white">
                                         Products
                                     </h3>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600   hover:underline"
+                                        className="block mt-2 text-sm text-white  hover:underline"
                                     >
                                         Mega cloud
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600   hover:underline"
+                                        className="block mt-2 text-sm text-white  hover:underline"
                                     >
                                         Aperion UI
                                     </Link>
                                     <Link
                                         to="/"
-                                        className="block mt-2 text-sm text-gray-600   hover:underline"
+                                        className="block mt-2 text-sm text-white  hover:underline"
                                     >
                                         Meraki UI
                                     </Link>
                                 </div>
 
                                 <div>
-                                    <h3 className="text-gray-700 uppercase dark:text-white">
+                                    <h3 className="  uppercase text-white">
                                         Contact
                                     </h3>
-                                    <span className="block mt-2 text-sm text-gray-600   hover:underline">
+                                    <span className="block mt-2 text-sm text-white  hover:underline">
                                         +1 526 654 8965
                                     </span>
-                                    <span className="block mt-2 text-sm text-gray-600   hover:underline">
+                                    <span className="block mt-2 text-sm text-white  hover:underline">
                                         example@email.com
                                     </span>
                                 </div>
@@ -158,8 +158,8 @@ const Footer = () => {
                     <div className="h-px my-6 bg-gray-300 border-none dark:bg-gray-700"></div>
 
                     <div>
-                        <p className="text-center text-gray-800 dark:text-white">
-                            © Brand 2020 - All rights reserved
+                        <p className="text-center  text-white">
+                            © Brand 2022 - All rights reserved
                         </p>
                     </div>
                 </div>

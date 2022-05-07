@@ -1,7 +1,6 @@
 import React from 'react'
 import useInventoriesData from '../../hooks/useInventoriesData'
-
-import FourItems from '../FourItems/FourItems'
+import Inventories from '../Inventories/Inventories'
 import Header from '../Header/Header'
 import SpecialDeal from '../SpecialDeal/SpecialDeal'
 import Spinner from '../Spinner/Spinner'
@@ -15,9 +14,8 @@ const Home = () => {
                 <Spinner />
             ) : (
                 <>
-                    {' '}
                     <Header />
-                    <FourItems />
+                    <Inventories />
                     <SpecialDeal />
                     <StockGallery />
                 </>
