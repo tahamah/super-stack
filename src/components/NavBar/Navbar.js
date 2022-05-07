@@ -12,7 +12,7 @@ const Navbar = () => {
     const photoDefault = 'https://i.ibb.co/kc4D42k/images.png'
     return (
         <div className=" md:sticky md:top-0  z-50 h-full w-full">
-            <nav className="w-full bg-[#000000]  md:py-3 md:block shadow">
+            <nav className="w-full bg-[#000000] hidden  md:py-3 md:block shadow">
                 <div className="container px-6 h-16 flex justify-between items-center mx-auto">
                     <div className="flex items-center">
                         <div className="mr-10 flex items-center">

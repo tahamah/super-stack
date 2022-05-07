@@ -166,9 +166,9 @@ const UpdateProduct = () => {
     return (
         <div className="md:min-h-screen">
             <ToastContainer />
-            <div className="max-w-2xl mx-auto overflow-hidden mt-16 bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div className="max-w-2xl  mx-4 md:mx-auto overflow-hidden mt-16 bg-white rounded-lg shadow-md dark:bg-gray-800">
                 <img
-                    className="object-cover w-full h-64"
+                    className="object-cover  w-full h-64"
                     src={img}
                     alt="Article"
                 />

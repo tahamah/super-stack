@@ -8,7 +8,7 @@ import 'swiper/css/scrollbar'
 
 const Header = () => {
     return (
-        <div className="md:h-[100vh] w-full">
+        <div className="md:h-[100vh] mt-14 md:mt-0 w-full">
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 navigation
