@@ -4,11 +4,19 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <div>
-            <footer className="bg-[#000000] pt-20">
-                <div className="container px-6 py-4 mx-auto">
-                    <div className="lg:flex">
+            <footer
+                className="bg-[#000000] pt-20"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+            >
+                <div className=" px-6 py-4 ">
+                    <div className="lg:flex container mx-auto">
                         <div className="w-full -mx-6 lg:w-2/5">
-                            <div className="px-6">
+                            <div
+                                className="px-6"
+                                data-aos="fade-right"
+                                data-aos-duration="3000"
+                            >
                                 <div>
                                     <Link
                                         to="/"
@@ -68,7 +76,10 @@ const Footer = () => {
 
                         <div className="mt-6 lg:mt-0 lg:flex-1">
                             <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
-                                <div>
+                                <div
+                                    data-aos="fade-right"
+                                    data-aos-duration="3000"
+                                >
                                     <h3 className="  uppercase text-white">
                                         About
                                     </h3>
@@ -92,7 +103,10 @@ const Footer = () => {
                                     </Link>
                                 </div>
 
-                                <div>
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-duration="3000"
+                                >
                                     <h3 className="  uppercase text-white">
                                         Blog
                                     </h3>
@@ -116,7 +130,10 @@ const Footer = () => {
                                     </Link>
                                 </div>
 
-                                <div>
+                                <div
+                                    data-aos="fade-left"
+                                    data-aos-duration="3000"
+                                >
                                     <h3 className="  uppercase text-white">
                                         Products
                                     </h3>
@@ -140,7 +157,10 @@ const Footer = () => {
                                     </Link>
                                 </div>
 
-                                <div>
+                                <div
+                                    data-aos="fade-left"
+                                    data-aos-duration="3000"
+                                >
                                     <h3 className="  uppercase text-white">
                                         Contact
                                     </h3>
@@ -154,14 +174,13 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div className="h-px my-6 bg-gray-300 border-none dark:bg-gray-700"></div>
-
-                    <div>
-                        <p className="text-center  text-white">
-                            © Brand 2022 - All rights reserved
-                        </p>
-                    </div>
+                <div className="h-px my-6 bg-gray-300 border-none w-full "></div>
+                <div>
+                    <p className="text-center pb-6 text-white">
+                        © Brand 2022 - All rights reserved
+                    </p>
                 </div>
             </footer>
         </div>

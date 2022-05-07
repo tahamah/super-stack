@@ -12,10 +12,18 @@ const SpecialDeal = () => {
     return (
         <div className="md:h-[110vh] relative bg-[#F9FAFB]">
             <div>
-                <h1 className="text-6xl  text-green-500  text-center pt-40 font-bold">
+                <h1
+                    className="text-6xl  text-green-500  text-center pt-40 font-bold"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                >
                     Special Deal
                 </h1>
-                <div className="flex justify-center mx-auto mt-6">
+                <div
+                    className="flex justify-center mx-auto mt-6"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                >
                     <span className="inline-block w-4 h-2 bg-yellow-400 rounded-full"></span>
                     <span className="inline-block w-16 h-2 mx-1 bg-yellow-400 rounded-full"></span>
                     <span className="inline-block w-40 h-2 bg-yellow-400 rounded-full"></span>
@@ -26,12 +34,18 @@ const SpecialDeal = () => {
                         className=" -rotate-12"
                         src="https://i.ibb.co/jZRvQcc/5797411-removebg-preview.png"
                         alt=""
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
                     />
                 </div>
             </div>
             <div className="flex flex-col md:flex-row pt-40 gap-10 justify-center">
                 <div>
-                    <div className="rounded-2 mx-auto max-w-[316px] border-yellow-400 border-8">
+                    <div
+                        className="rounded-2 mx-auto max-w-[316px] border-yellow-400 border-8"
+                        data-aos="fade-right"
+                        data-aos-duration="2000"
+                    >
                         <BeforeAfterSlider
                             before={before1}
                             after={after1}
@@ -39,10 +53,20 @@ const SpecialDeal = () => {
                             height={480}
                         />
                     </div>
-                    <p className="text-center">50% off for 50kg</p>
+                    <p
+                        className="text-center font-bold mt-4 "
+                        data-aos="fade-right"
+                        data-aos-duration="3000"
+                    >
+                        50% off for 50kg
+                    </p>
                 </div>
                 <div>
-                    <div className="rounded-2 mx-auto max-w-[316px] border-gray-300 border-8">
+                    <div
+                        className="rounded-2 mx-auto max-w-[316px] border-gray-300 border-8"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                    >
                         <BeforeAfterSlider
                             before={before2}
                             after={after2}
@@ -50,10 +74,20 @@ const SpecialDeal = () => {
                             height={480}
                         />
                     </div>
-                    <p className="text-center">50% off for 100kg</p>
+                    <p
+                        className="text-center font-bold mt-4 "
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                    >
+                        50% off for 100kg
+                    </p>
                 </div>
                 <div>
-                    <div className="rounded-2 mx-auto max-w-[316px] border-yellow-400 border-8">
+                    <div
+                        className="rounded-2 mx-auto max-w-[316px] border-yellow-400 border-8"
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >
                         <BeforeAfterSlider
                             before={before3}
                             after={after3}
@@ -61,7 +95,13 @@ const SpecialDeal = () => {
                             height={480}
                         />
                     </div>
-                    <p className="text-center">50% off for 100 dozen </p>
+                    <p
+                        className="text-center font-bold mt-4 "
+                        data-aos="fade-left"
+                        data-aos-duration="3000"
+                    >
+                        50% off for 100 dozen{' '}
+                    </p>
                 </div>
             </div>
         </div>
