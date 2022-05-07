@@ -8,7 +8,7 @@ import 'swiper/css/scrollbar'
 
 const Header = () => {
     return (
-        <div className="md:h-[100vh] mt-14 md:mt-0 w-full">
+        <div className="md:h-[100vh] overflow-x-hidden bg-gray-600 mt-14 md:mt-0 w-full">
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 navigation
@@ -21,12 +21,13 @@ const Header = () => {
                     <div className="relative">
                         <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] hidden sm:flex flex-col items-center justify-center gap-5">
                             <h1 className="text-slate-100 font-bold text-3xl lg:text-6xl capitalize text-center">
-                                Hello! Uncle ami bachelor Hello! Uncle ami
-                                bachelor Hello! Uncle ami bachelor bachelor
-                                Hello! Uncle ami bachelor
+                                Our Working Place
                             </h1>
                             <p className="text-slate-300 font-medium text-sm lg:text-xl text-center">
-                                hfsdijgokjdsokjgokjdf
+                                You know that working place is very important
+                                for performance.We have a super cool office. The
+                                net and clean Environment makes an employee
+                                super fast and productive.
                             </p>
                         </div>
                         <img
@@ -40,12 +41,13 @@ const Header = () => {
                     <div className="relative">
                         <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] hidden sm:flex flex-col items-center justify-center gap-5">
                             <h1 className="text-slate-100 font-bold text-3xl lg:text-6xl capitalize text-center">
-                                Hello! Uncle ami bachelor Hello! Uncle ami
-                                bachelor Hello! Uncle ami bachelor bachelor
-                                Hello! Uncle ami bachelor
+                                Religious festivals and Others
                             </h1>
                             <p className="text-slate-300 font-medium text-sm lg:text-xl text-center">
-                                hfsdijgokjdsokjgokjdf
+                                Every single day we make party and enjoy our
+                                office time. For this, Our client and employees
+                                are so much happy. It is the tricks of our
+                                company. to make sure productivity.
                             </p>
                         </div>
                         <img
@@ -59,12 +61,13 @@ const Header = () => {
                     <div className="relative">
                         <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] hidden sm:flex flex-col items-center justify-center gap-5">
                             <h1 className="text-slate-100 font-bold text-3xl lg:text-6xl capitalize text-center">
-                                Hello! Uncle ami bachelor Hello! Uncle ami
-                                bachelor Hello! Uncle ami bachelor bachelor
-                                Hello! Uncle ami bachelor
+                                Working Time
                             </h1>
                             <p className="text-slate-300 font-medium text-sm lg:text-xl text-center">
-                                hfsdijgokjdsokjgokjdf
+                                We provide 24/7 service. But We believe that
+                                over time can't make super production. For this
+                                reason we make sure more and more shift for our
+                                employees to did super service.
                             </p>
                         </div>
                         <img
@@ -78,12 +81,16 @@ const Header = () => {
                     <div className="relative">
                         <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] hidden sm:flex flex-col items-center justify-center gap-5">
                             <h1 className="text-slate-100 font-bold text-3xl lg:text-6xl capitalize text-center">
-                                Hello! Uncle ami bachelor Hello! Uncle ami
-                                bachelor Hello! Uncle ami bachelor bachelor
-                                Hello! Uncle ami bachelor
+                                Our Location
                             </h1>
                             <p className="text-slate-300 font-medium text-sm lg:text-xl text-center">
-                                hfsdijgokjdsokjgokjdf
+                                Super Sack Location Service is a location-based
+                                service that developers can use to add
+                                geospatial data and location functionality to
+                                applications. Customers can visualize data on a
+                                map, recommend routes, use geocoding to convert
+                                plain text addresses into geographic
+                                coordinates.
                             </p>
                         </div>
                         <img

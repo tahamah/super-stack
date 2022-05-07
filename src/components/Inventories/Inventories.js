@@ -10,13 +10,13 @@ const FourItems = () => {
     }
 
     return (
-        <div className="md:min-h-[150vh]  flex flex-col justify-center">
+        <div className="md:min-h-[150vh] overflow-x-hidden bg-[#011520] pb-10 md:pb-0 flex flex-col justify-center">
             <div
                 className="mx-auto"
                 data-aos="fade-up"
                 data-aos-duration="2000"
             >
-                <h1 className="text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800">
+                <h1 className="text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-100">
                     Inventories
                 </h1>
             </div>
@@ -77,12 +77,33 @@ const FourItems = () => {
                 ))}
             </div>
             <div
-                className="mx-auto mt-20"
+                className="mx-auto  mt-20"
                 data-aos="fade-up"
                 data-aos-anchor-placement="bottom-bottom"
                 data-aos-duration="2000"
             >
-                <Link to="/manageAll" className="border-2 py-2 px-5">
+                <Link
+                    to="/manageAll"
+                    className="
+                    inline-flex
+                    items-center
+                    mt-4
+                    px-5
+                    py-2
+                    outline 
+                    ease-in-out
+                    duration-500
+                    outline-gray-100
+                    hover:bg-gray-100
+                    hover:outline-gray-600
+                    hover:text-gray-900
+                    hover:-translate-y-3
+                    bg-gray-900
+                    text-white
+                    font-bold
+                    lg:mb-0
+                    "
+                >
                     ManageAll
                 </Link>
             </div>

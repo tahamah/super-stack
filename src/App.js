@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import AddItems from './components/AddItems/AddItems'
+import Blogs from './components/Blogs/Blogs'
 import EmailVerification from './components/EmailVerification/EmailVerification'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/others" element={<Others />} />
                 <Route path="/special" element={<SpecialDeal />} />
+                <Route path="/blogs" element={<Blogs />} />
                 <Route
                     path="/myItems"
                     element={

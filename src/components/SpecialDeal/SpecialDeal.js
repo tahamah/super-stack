@@ -10,8 +10,8 @@ const SpecialDeal = () => {
     const after3 = 'https://i.ibb.co/Fxb2MFW/2.png'
 
     return (
-        <div className="md:h-[110vh] relative bg-[#F9FAFB]">
-            <div>
+        <div className="md:h-[110vh] overflow-x-hidden bg-[#F9FAFB]">
+            <div className="relative">
                 <h1
                     className="text-6xl  text-green-500  text-center pt-40 font-bold"
                     data-aos="fade-left"
@@ -29,7 +29,7 @@ const SpecialDeal = () => {
                     <span className="inline-block w-40 h-2 bg-yellow-400 rounded-full"></span>
                 </div>
 
-                <div className="-rotate-12 md:mt-0 mt-28 md:absolute left-44 top-44 ">
+                <div className="-rotate-12 md:mt-0 mt-28 md:absolute md:w-auto  w-2/3 ml-12 md:left-44 top-44 ">
                     <img
                         className=" -rotate-12"
                         src="https://i.ibb.co/jZRvQcc/5797411-removebg-preview.png"
@@ -39,17 +39,17 @@ const SpecialDeal = () => {
                     />
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row pt-40 gap-10 justify-center">
+            <div className="flex flex-col md:flex-row  pt-40 gap-10 justify-center">
                 <div>
                     <div
-                        className="rounded-2 mx-auto max-w-[316px] border-yellow-400 border-8"
+                        className="rounded-2 mx-auto max-w-[300px] border-yellow-400 border-8"
                         data-aos="fade-right"
                         data-aos-duration="2000"
                     >
                         <BeforeAfterSlider
                             before={before1}
                             after={after1}
-                            width={300}
+                            width={284}
                             height={480}
                         />
                     </div>
@@ -63,14 +63,14 @@ const SpecialDeal = () => {
                 </div>
                 <div>
                     <div
-                        className="rounded-2 mx-auto max-w-[316px] border-gray-300 border-8"
+                        className="rounded-2 mx-auto max-w-[300px] border-gray-300 border-8"
                         data-aos="fade-up"
                         data-aos-duration="3000"
                     >
                         <BeforeAfterSlider
                             before={before2}
                             after={after2}
-                            width={300}
+                            width={284}
                             height={480}
                         />
                     </div>
@@ -84,14 +84,14 @@ const SpecialDeal = () => {
                 </div>
                 <div>
                     <div
-                        className="rounded-2 mx-auto max-w-[316px] border-yellow-400 border-8"
+                        className="rounded-2 mx-auto max-w-[300px] border-yellow-400 border-8"
                         data-aos="fade-left"
                         data-aos-duration="2000"
                     >
                         <BeforeAfterSlider
                             before={before3}
                             after={after3}
-                            width={300}
+                            width={284}
                             height={480}
                         />
                     </div>

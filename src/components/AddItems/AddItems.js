@@ -51,7 +51,7 @@ const AddItems = () => {
                     <div className="md:flex ">
                         <div className="md:w-1/2">
                             <label
-                                for="username"
+                                htmlFor="username"
                                 className="block text-sm text-gray-800 dark:text-gray-200"
                             >
                                 Product Name:
@@ -66,7 +66,7 @@ const AddItems = () => {
                         </div>
                         <div className="md:w-1/2 md:mt-0 mt-6 md:md-0  md:pl-10">
                             <label
-                                for="username"
+                                htmlFor="username"
                                 className="block text-sm text-gray-800 dark:text-gray-200"
                             >
                                 Supplier Name:
@@ -84,7 +84,7 @@ const AddItems = () => {
                     <div className="mt-4">
                         <div className="flex items-center justify-between">
                             <label
-                                for="password"
+                                htmlFor="password"
                                 className="block text-sm text-gray-800 dark:text-gray-200"
                             >
                                 Photo Url:
@@ -102,7 +102,7 @@ const AddItems = () => {
                     <div className="md:flex  mt-4">
                         <div className="md:w-1/2">
                             <label
-                                for="username"
+                                htmlFor="username"
                                 className="block text-sm text-gray-800 dark:text-gray-200"
                             >
                                 Price:
@@ -117,7 +117,7 @@ const AddItems = () => {
                         </div>
                         <div className="md:w-1/2 md:mt-0 mt-6 md:md-0  md:pl-10">
                             <label
-                                for="username"
+                                htmlFor="username"
                                 className="block text-sm text-gray-800 dark:text-gray-200"
                             >
                                 Quantity:
@@ -131,7 +131,7 @@ const AddItems = () => {
                         </div>
                         <div className="md:w-1/2 md:mt-0 mt-6 md:md-0  md:pl-10">
                             <label
-                                for="username"
+                                htmlFor="username"
                                 className="block text-sm text-gray-800 dark:text-gray-200"
                             >
                                 Unit:
@@ -148,7 +148,7 @@ const AddItems = () => {
                     <div className="mt-4">
                         <div className="flex items-center justify-between">
                             <label
-                                for="password"
+                                htmlFor="password"
                                 className="block text-sm text-gray-800 dark:text-gray-200"
                             >
                                 Description:

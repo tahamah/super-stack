@@ -3,7 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 import { signOut } from 'firebase/auth'
 import { Link } from 'react-router-dom'
 import auth from '../../Firebase/Firebase'
-//bg-[#51AA1C]
+
 const Navbar = () => {
     const [show, setShow] = useState(null)
     const [user, loading, error] = useAuthState(auth)
@@ -17,7 +17,7 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <div className="mr-10 flex items-center">
                             <h3 className="text-2xl text-white font-bold tracking-normal leading-tight ml-3 hidden lg:block">
-                                Brand Name
+                                Super Stock
                             </h3>
                         </div>
                         <ul className="hidden ml-10 md:flex gap-5 items-center h-full">
@@ -27,7 +27,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
-                                Blog
+                                <Link to="/blogs"> Blogs</Link>
                             </li>
                             <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
                                 <Link to="/others"> Others</Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
             </nav>
             {/* Navbar */}
             <nav>
-                <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center bg-[#000000] fixed top-0 z-40">
+                <div className="py-4 px-6 w-screen  flex md:hidden justify-between items-center bg-[#000000] fixed top-0 z-40">
                     <div className="w-24 text-white">logo</div>
                     <div>
                         <div
@@ -290,50 +290,6 @@ const Navbar = () => {
                                                     </Link>
                                                 )}
                                             </div>
-                                            {/* <ul className="flex">
-                                                <li className="cursor-pointer text-white pt-5 pb-3">
-                                                    <div className="w-6 h-6 md:w-8 md:h-8">
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            className="icon icon-tabler icon-tabler-messages"
-                                                            viewBox="0 0 24 24"
-                                                            strokeWidth={1}
-                                                            stroke="currentColor"
-                                                            fill="none"
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                        >
-                                                            <path
-                                                                stroke="none"
-                                                                d="M0 0h24v24H0z"
-                                                            />
-                                                            <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
-                                                            <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
-                                                        </svg>
-                                                    </div>
-                                                </li>
-                                                <li className="cursor-pointer text-gray-800 pt-5 pb-3 pl-3">
-                                                    <div className="w-6 h-6 md:w-8 md:h-8">
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            className="icon icon-tabler icon-tabler-bell"
-                                                            viewBox="0 0 24 24"
-                                                            strokeWidth={1}
-                                                            stroke="currentColor"
-                                                            fill="none"
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                        >
-                                                            <path
-                                                                stroke="none"
-                                                                d="M0 0h24v24H0z"
-                                                            />
-                                                            <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
-                                                            <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
-                                                        </svg>
-                                                    </div>
-                                                </li>
-                                            </ul> */}
                                         </div>
                                     </div>
                                 </div>
@@ -342,8 +298,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            {/* Sidebar ends */}
-            {/* Code block ends */}
         </div>
     )
 }

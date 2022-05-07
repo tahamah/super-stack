@@ -2,10 +2,10 @@ import React from 'react'
 
 const StockGallery = () => {
     return (
-        <div className="md:h-[110vh] bg-yellow-500">
+        <div className="md:h-[110vh] overflow-x-hidden bg-yellow-500">
             <div className=" py-20 flex flex-col items-center justify-center">
                 <div className="xl:w-1/2 w-11/12">
-                    <h1 className="text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-100">
+                    <h1 className="md:text-6xl text-5xl font-bold 2xl:leading-10 leading-0 text-center text-gray-100">
                         Stock Gallery
                     </h1>
                     <div className="flex justify-center mx-auto mt-6">

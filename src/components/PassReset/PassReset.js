@@ -29,7 +29,7 @@ const PassReset = () => {
                 <form onSubmit={handSend} className="mt-6">
                     <div>
                         <label
-                            for="username"
+                            htmlFor="username"
                             className="block text-sm text-gray-800 dark:text-gray-200"
                         >
                             Email

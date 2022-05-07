@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <footer
-                className="bg-[#000000] pt-20"
+                className="bg-[#000000] overflow-x-hidden max-w-screen pt-20"
                 data-aos="fade-up"
                 data-aos-duration="2000"
             >
@@ -34,7 +34,7 @@ const Footer = () => {
                                 <div className="flex mt-4 -mx-2">
                                     <Link
                                         to="/"
-                                        className="mx-2   dark:text-gray-200 hover:text-whitedark:hover:text-gray-400"
+                                        className="mx-2   text-gray-100 "
                                         aria-label="Linkden"
                                     >
                                         <svg
@@ -47,7 +47,7 @@ const Footer = () => {
 
                                     <Link
                                         to="/"
-                                        className="mx-2   dark:text-gray-200 hover:text-whitedark:hover:text-gray-400"
+                                        className="mx-2   text-gray-100 "
                                         aria-label="Facebook"
                                     >
                                         <svg
@@ -60,7 +60,7 @@ const Footer = () => {
 
                                     <Link
                                         to="/"
-                                        className="mx-2   dark:text-gray-200 hover:text-whitedark:hover:text-gray-400"
+                                        className="mx-2   text-gray-100 "
                                         aria-label="Twitter"
                                     >
                                         <svg
@@ -176,7 +176,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="h-px my-6 bg-gray-300 border-none w-full "></div>
+                <div className="h-px my-6 bg-gray-300 border-none w-screen "></div>
                 <div>
                     <p className="text-center pb-6 text-white">
                         © Brand 2022 - All rights reserved
