@@ -11,23 +11,39 @@ const FourItems = () => {
 
     return (
         <div className="md:min-h-[150vh]  flex flex-col justify-center">
-            <div className="mx-auto">
+            <div
+                className="mx-auto"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+            >
                 <h1 className="text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800">
                     Inventories
                 </h1>
             </div>
             <div className="grid mx-10 mt-10 gap-10 grid-cols-1 md:pt-28 md:grid-cols-2 max-w-7xl md:mx-auto">
                 {data.map((p) => (
-                    <div className="md:flex max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                    <div
+                        className="md:flex max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg "
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                    >
                         <div className="md:w-1/3  bg-cover">
                             <img
                                 className=" md:h-full h-[270px] w-full"
                                 src={p.img}
                                 alt=""
+                                data-aos="zoom-in"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="1000"
                             />
                         </div>
 
-                        <div className="md:w-2/3 w-full p-4 md:p-4">
+                        <div
+                            className="md:w-2/3 w-full p-4 md:p-4"
+                            data-aos="zoom-in"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1000"
+                        >
                             <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
                                 {p.product_name}
                             </h1>
@@ -60,7 +76,12 @@ const FourItems = () => {
                     </div>
                 ))}
             </div>
-            <div className="mx-auto mt-20">
+            <div
+                className="mx-auto mt-20"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="2000"
+            >
                 <Link to="/manageAll" className="border-2 py-2 px-5">
                     ManageAll
                 </Link>
