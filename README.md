@@ -24,7 +24,7 @@ It is grocery management website.We stock product from many company and deliver 
 
 *   I use Table in "Manage All" section.
 
-I thinhk for those resone my web is Different from others.
+I think for those reasons my web is Different from others.
 
 ## The technology has been used:
 
@@ -37,3 +37,13 @@ I thinhk for those resone my web is Different from others.
 4.React Router
 
 5.Firebase
+
+6.Axios
+
+7.Mongo DB
+
+8.React-firebase-hooks
+
+9.Swiper(to do animation)
+
+10.React-before-after-slider
