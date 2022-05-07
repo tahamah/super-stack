@@ -19,11 +19,11 @@ const Header = () => {
             >
                 <SwiperSlide>
                     <div className="relative">
-                        <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] hidden sm:flex flex-col items-center justify-center gap-5">
-                            <h1 className="text-slate-100 font-bold text-3xl lg:text-6xl capitalize text-center">
+                        <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]  sm:flex flex-col items-center justify-center gap-5">
+                            <h1 className="text-slate-100 font-bold  text-3xl lg:text-6xl capitalize text-center">
                                 Our Working Place
                             </h1>
-                            <p className="text-slate-300 font-medium text-sm lg:text-xl text-center">
+                            <p className="text-slate-300 hidden md:block font-medium text-sm md:text-xl text-center">
                                 You know that working place is very important
                                 for performance.We have a super cool office. The
                                 net and clean Environment makes an employee
@@ -39,11 +39,11 @@ const Header = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="relative">
-                        <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] hidden sm:flex flex-col items-center justify-center gap-5">
+                        <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]  sm:flex flex-col items-center   justify-center gap-5">
                             <h1 className="text-slate-100 font-bold text-3xl lg:text-6xl capitalize text-center">
                                 Religious festivals and Others
                             </h1>
-                            <p className="text-slate-300 font-medium text-sm lg:text-xl text-center">
+                            <p className="text-slate-300 md:block hidden font-medium text-sm lg:text-xl text-center">
                                 Every single day we make party and enjoy our
                                 office time. For this, Our client and employees
                                 are so much happy. It is the tricks of our
@@ -59,11 +59,11 @@ const Header = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="relative">
-                        <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] hidden sm:flex flex-col items-center justify-center gap-5">
+                        <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]  sm:flex flex-col items-center justify-center gap-5">
                             <h1 className="text-slate-100 font-bold text-3xl lg:text-6xl capitalize text-center">
                                 Working Time
                             </h1>
-                            <p className="text-slate-300 font-medium text-sm lg:text-xl text-center">
+                            <p className="text-slate-300 md:block hidden font-medium text-sm lg:text-xl text-center">
                                 We provide 24/7 service. But We believe that
                                 over time can't make super production. For this
                                 reason we make sure more and more shift for our
@@ -79,11 +79,11 @@ const Header = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="relative">
-                        <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] hidden sm:flex flex-col items-center justify-center gap-5">
+                        <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]  sm:flex flex-col items-center justify-center gap-5">
                             <h1 className="text-slate-100 font-bold text-3xl lg:text-6xl capitalize text-center">
                                 Our Location
                             </h1>
-                            <p className="text-slate-300 font-medium text-sm lg:text-xl text-center">
+                            <p className="text-slate-300 md:block hidden font-medium text-sm lg:text-xl text-center">
                                 Super Sack Location Service is a location-based
                                 service that developers can use to add
                                 geospatial data and location functionality to

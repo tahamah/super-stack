@@ -84,7 +84,9 @@ const Navbar = () => {
             {/* Navbar */}
             <nav>
                 <div className="py-4 px-6 w-screen  flex md:hidden justify-between items-center bg-[#000000] fixed top-0 z-40">
-                    <div className="w-24 text-white">logo</div>
+                    <div className="w-24 font-bold  text-white">
+                        Super Stock
+                    </div>
                     <div>
                         <div
                             id="menu"
@@ -140,7 +142,7 @@ const Navbar = () => {
                                         <div className="flex items-center justify-between w-full">
                                             <div className="flex items-center">
                                                 <p className="text-base text-white ml-3">
-                                                    The North
+                                                    Super Stock
                                                 </p>
                                             </div>
                                             <div
@@ -185,7 +187,7 @@ const Navbar = () => {
                                             <li className="text-gray-800 pt-8">
                                                 <div className="flex items-center">
                                                     <p className="text-white xl:text-base text-base ml-3">
-                                                        Home
+                                                        <Link to="/">Home</Link>
                                                     </p>
                                                 </div>
                                             </li>
@@ -195,7 +197,9 @@ const Navbar = () => {
                                                 <div className="flex items-center justify-between">
                                                     <div className="flex items-center">
                                                         <p className="text-white xl:text-base md:text-2xl text-base ml-3">
-                                                            Products
+                                                            <Link to="/blogs">
+                                                                Blogs
+                                                            </Link>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -205,7 +209,9 @@ const Navbar = () => {
                                             <li className="text-white pt-8">
                                                 <div className="flex items-center">
                                                     <p className="text-white xl:text-base md:text-2xl text-base ml-3">
-                                                        Performance
+                                                        <Link to="/others">
+                                                            Others
+                                                        </Link>
                                                     </p>
                                                 </div>
                                             </li>
@@ -214,7 +220,9 @@ const Navbar = () => {
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
                                                     <p className="text-white xl:text-base md:text-2xl text-base ml-3">
-                                                        Deliverables
+                                                        <Link to="/special">
+                                                            Special Deal
+                                                        </Link>
                                                     </p>
                                                 </div>
                                             </div>

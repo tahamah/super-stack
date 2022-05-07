@@ -16,7 +16,7 @@ const FourItems = () => {
                 data-aos="fade-up"
                 data-aos-duration="2000"
             >
-                <h1 className="text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-100">
+                <h1 className="text-6xl pt-12 md:pt-0 font-bold 2xl:leading-10  text-center text-gray-100">
                     Inventories
                 </h1>
             </div>
