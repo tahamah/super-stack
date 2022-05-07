@@ -1,3 +1,5 @@
+import { faChildReaching } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -20,9 +22,13 @@ const Footer = () => {
                                 <div>
                                     <Link
                                         to="/"
-                                        className="text-xl font-bold text-white hover:  dark:hover:text-gray-300"
+                                        className="text-xl flex   font-bold text-gray-200   "
                                     >
-                                        Brand
+                                        Super Stock
+                                        <span className="flex h-[20px] mt-2 ml-2 w-[20px]">
+                                            <span class="animate-ping  absolute inline-flex h-[15px] w-[15px] rounded-full bg-white opacity-75"></span>
+                                            <span class="relative inline-flex rounded-full h-[15px] w-[15px] bg-white"></span>
+                                        </span>
                                     </Link>
                                 </div>
 
@@ -168,7 +174,7 @@ const Footer = () => {
                                         +1 526 654 8965
                                     </span>
                                     <span className="block mt-2 text-sm text-white  hover:underline">
-                                        example@email.com
+                                        superstack@email.com
                                     </span>
                                 </div>
                             </div>
@@ -179,7 +185,7 @@ const Footer = () => {
                 <div className="h-px my-6 bg-gray-300 border-none w-screen "></div>
                 <div>
                     <p className="text-center pb-6 text-white">
-                        © Brand 2022 - All rights reserved
+                        Super Stock © 2022 - All rights reserved
                     </p>
                 </div>
             </footer>

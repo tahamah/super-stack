@@ -5,6 +5,7 @@ import Header from '../Header/Header'
 import SpecialDeal from '../SpecialDeal/SpecialDeal'
 import Spinner from '../Spinner/Spinner'
 import StockGallery from '../StockGallery/StockGallery'
+import Footer from '../Footer/Footer'
 
 const Home = () => {
     const [data] = useInventoriesData()
@@ -18,6 +19,7 @@ const Home = () => {
                     <Inventories />
                     <SpecialDeal />
                     <StockGallery />
+                    <Footer />
                 </>
             )}
         </div>

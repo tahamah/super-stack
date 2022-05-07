@@ -2,16 +2,24 @@ import React from 'react'
 
 const StockGallery = () => {
     return (
-        <div className="md:h-[110vh] overflow-x-hidden bg-yellow-500">
+        <div className="md:h-[110vh] overflow-x-hidden bg-[#120E43]">
             <div className=" py-20 flex flex-col items-center justify-center">
                 <div className="xl:w-1/2 w-11/12">
-                    <h1 className="md:text-6xl text-5xl font-bold 2xl:leading-10 leading-0 text-center text-gray-100">
+                    <h1
+                        className="md:text-6xl text-5xl font-bold 2xl:leading-10 leading-0 text-center text-gray-100"
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                    >
                         Stock Gallery
                     </h1>
-                    <div className="flex justify-center mx-auto mt-6">
-                        <span className="inline-block w-44 h-2 bg-red-500 rounded-full"></span>
-                        <span className="inline-block w-20 h-2 mx-1 bg-red-500 rounded-full"></span>
-                        <span className="inline-block w-12 h-2 bg-red-500 rounded-full"></span>
+                    <div
+                        className="flex justify-center mx-auto mt-6"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                    >
+                        <span className="inline-block w-44 h-2 bg-yellow-500 rounded-full"></span>
+                        <span className="inline-block w-20 h-2 mx-1 bg-yellow-500 rounded-full"></span>
+                        <span className="inline-block w-12 h-2 bg-yellow-500 rounded-full"></span>
                     </div>
                 </div>
                 <div className="2xl:px-20 lg:px-12 px-4 flex flex-wrap items-start mt-4">

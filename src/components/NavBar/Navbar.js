@@ -42,13 +42,13 @@ const Navbar = () => {
                             {user ? (
                                 <div className="h-full gap-x-5 flex">
                                     <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-100">
+                                        <Link to="/manageAll">Manage All</Link>
+                                    </div>
+                                    <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-100">
                                         <Link to="/myItems">My Items</Link>
                                     </div>
                                     <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-100">
                                         <Link to="/addItems">Add Items</Link>
-                                    </div>
-                                    <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-100">
-                                        <Link to="/manageAll">Manage All</Link>
                                     </div>
                                 </div>
                             ) : (
