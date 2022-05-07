@@ -10,15 +10,21 @@ server- https://agile-journey-07748.herokuapp.com
 
 It is grocery management website.We stock product from many company and deliver many shop and super shop.The mane thing of the website is Stocking, Deliver and manage. Here is many option as if you want to Add new product, you can. or If you want to delete you can also. But the mane thing is to those you should have an account. and you should log in. Other oise You can't access those features.Hear is also a simple JWT . Then you Login It will create a JWT token.
 
--   The web has made for a gym triner , He provides more services.
+## Different Features and Functionality
 
-*   If you want to see his services go to the [SERVICES](https://gym-triner-9c7c3.web.app/services) tab.
+-   I use a cute animation in my website It made my web Different from others.
 
-*   The web has a privet route. If you have an account, you will be able to access this privet route.
+*   In the top of "Home" section. I use "React Swiper" to make my project uniq.
 
-*   If you don't have an account. You should create a new account.
+*   The Text Effects of "Others" rout is uniq from others.
 
-*   To read interesting blog visit [Blog's](https://gym-triner-9c7c3.web.app/services).
+*   The "Special Deal" section is fully uniq I use react-before-after-slider.
+
+*   I use react toastify to show error messages and success messages.
+
+*   I use Table in "Manage All" section.
+
+I thinhk for those resone my web is Different from others.
 
 ## The technology has been used:
 

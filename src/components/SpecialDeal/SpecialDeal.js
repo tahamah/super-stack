@@ -54,7 +54,7 @@ const SpecialDeal = () => {
                         />
                     </div>
                     <p
-                        className="text-center font-bold mt-4 "
+                        className="text-center text-white font-bold mt-4 "
                         data-aos="fade-right"
                         data-aos-duration="3000"
                     >
@@ -75,7 +75,7 @@ const SpecialDeal = () => {
                         />
                     </div>
                     <p
-                        className="text-center font-bold mt-4 "
+                        className="text-center text-white font-bold mt-4 "
                         data-aos="fade-up"
                         data-aos-duration="3000"
                     >
@@ -96,7 +96,7 @@ const SpecialDeal = () => {
                         />
                     </div>
                     <p
-                        className="text-center font-bold mt-4 "
+                        className="text-center text-white font-bold mt-4 "
                         data-aos="fade-left"
                         data-aos-duration="3000"
                     >
