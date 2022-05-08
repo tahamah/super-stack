@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
 
 const UpdateProduct = () => {
     const [productData, setProductData] = useState([])
-    const { img, product_name, supplier_name, body } = productData
+    const { img, product_name, supplier_name, body, price } = productData
     const [quantityQuant, setQuantityQuant] = useState(0)
     const { product_id } = useParams()
     const [addQuantity, setAddQuantity] = useState(0)
@@ -193,7 +193,7 @@ const UpdateProduct = () => {
                                         placeholder="Product Name"
                                         type="text"
                                         value={product_name}
-                                        className="block w-full  px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full  px-4 py-2 mt-2 text-gray-700 bg-gray-100 border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                         required
                                         readOnly
                                         disabled
@@ -215,38 +215,12 @@ const UpdateProduct = () => {
                                         placeholder="Supplier Name"
                                         type="text"
                                         value={supplier_name}
-                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-gray-100 border rounded-md    focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                         required
                                         readOnly
                                         disabled
                                     />
                                 </div>
-                            </div>
-                            <div
-                                className="mt-4"
-                                data-aos="fade-up"
-                                data-aos-duration="1000"
-                            >
-                                <div className="flex items-center justify-between">
-                                    <label
-                                        htmlFor="password"
-                                        className="block text-sm text-gray-800 dark:text-gray-200"
-                                    >
-                                        Description:
-                                    </label>
-                                </div>
-
-                                <textarea
-                                    name="description"
-                                    placeholder="Description"
-                                    value={body}
-                                    type="text"
-                                    rows="3"
-                                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                                    required
-                                    readOnly
-                                    disabled
-                                />
                             </div>
 
                             <div className="md:flex gap-10 mt-4">
@@ -265,7 +239,28 @@ const UpdateProduct = () => {
                                         name="quantity"
                                         type="number"
                                         value={quantityQuant}
-                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-gray-100 border rounded-md    focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        required
+                                        readOnly
+                                        disabled
+                                    />
+                                </div>
+                                <div
+                                    className="md:w-1/2 md:mt-0 mt-6 md:md-0 "
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
+                                >
+                                    <label
+                                        htmlFor="username"
+                                        className="block text-sm text-gray-800 dark:text-gray-200"
+                                    >
+                                        Price:
+                                    </label>
+                                    <input
+                                        name="quantity"
+                                        type="number"
+                                        value={price}
+                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-gray-100 border rounded-md   focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                         required
                                         readOnly
                                         disabled
@@ -317,7 +312,33 @@ const UpdateProduct = () => {
                                     Add Quantity
                                 </button>
                             </div>
-                            <div className=" md:flex justify-end mt-4">
+                            <div
+                                className="mt-4"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
+                                <div className="flex items-center justify-between">
+                                    <label
+                                        htmlFor="password"
+                                        className="block text-sm text-gray-800 dark:text-gray-200"
+                                    >
+                                        Description:
+                                    </label>
+                                </div>
+
+                                <textarea
+                                    name="description"
+                                    placeholder="Description"
+                                    value={body}
+                                    type="text"
+                                    rows="3"
+                                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-gray-100 border rounded-md   focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    required
+                                    readOnly
+                                    disabled
+                                />
+                            </div>
+                            <div className=" md:flex justify-between  mt-4">
                                 <div
                                     data-aos="fade-left"
                                     data-aos-duration="1000"
@@ -327,6 +348,14 @@ const UpdateProduct = () => {
                                         onClick={() => navigate(-1)}
                                     >
                                         Go Back
+                                    </button>
+                                </div>
+                                <div
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
+                                >
+                                    <button className="bg-green-500 text-white py-1 px-5 hover:translate-x-3 duration-500  rounded-full mt-5">
+                                        <Link to="/manageAll"> Manage All</Link>
                                     </button>
                                 </div>
                             </div>
