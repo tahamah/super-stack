@@ -32,9 +32,9 @@ const FourItems = () => {
             <div className="grid mx-10 mt-10 gap-10  grid-cols-1 md:pt-28 md:grid-cols-2 max-w-7xl md:mx-auto">
                 {data.map((p) => (
                     <div
-                        className="md:flex max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg "
-                        data-aos="fade-up"
-                        data-aos-duration="1000"
+                        className="md:flex max-w-md mx-auto hover:bg-[#332467] duration-500  overflow-hidden rounded-lg shadow-lg  hover:text-gray-200 text-gray-700 transition ease-in-out delay-100 hover:drop-shadow-2xl hover:-translate-y-1   hover:scale-110  bg-gray-300"
+                        // data-aos="fade-up"
+                        // data-aos-duration="1000"
                     >
                         <div className="md:w-1/3  bg-cover">
                             <img
@@ -53,30 +53,43 @@ const FourItems = () => {
                             data-aos-easing="ease-out-cubic"
                             data-aos-duration="1000"
                         >
-                            <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
+                            <h1 className="text-2xl font-bold ">
                                 {p.product_name}
                             </h1>
-                            <p className="text-gray-400">
-                                by {p.supplier_name}
-                            </p>
+                            <p className="">by {p.supplier_name}</p>
 
-                            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                            <p className="mt-2 text-sm  ">
                                 {p.body.slice(0, 100)}
                             </p>
                             <p className="mt-5">
-                                Available: {p.quantity} carot
+                                Available: {p.quantity} {p.unit}
                             </p>
 
                             <div className="md:flex justify-between mt-3 item-center">
-                                <h1 className="text-lg font-bold text-gray-700 dark:text-gray-200 md:text-xl">
+                                <h1 className="text-lg font-bold md:text-xl">
                                     ${p.price}
-                                    <span className="text-sm font-normal text-gray-00 ">
-                                        ( {p.unit} )
+                                    <span className="text-sm ml-2 font-normal text-gray-00 ">
+                                        par ( {p.unit} )
                                     </span>
                                 </h1>
                                 <button
                                     onClick={() => navigateToUpdate(p._id)}
-                                    className="px-2 py-1 mt-2 text-xs font-bold text-white uppercase transition-colors duration-200 transform bg-gray-800 rounded dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:bg-gray-700 "
+                                    className="inline-flex
+                                    items-center
+                                    mt-4
+                                    px-2
+                                    rounded
+                                    outline 
+                                    duration-500
+                                    outline-[#332467]
+                                    hover:bg-[#332467]
+                                    hover:outline-gray-500
+                                    hover:-translate-y-1
+                                   bg-gray-100
+                                    text-[#332467]
+                                    font-bold
+                                    lg:mb-0
+                                    hover:text-gray-100 "
                                 >
                                     Update
                                 </button>

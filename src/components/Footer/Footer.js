@@ -1,4 +1,7 @@
-import { faChildReaching } from '@fortawesome/free-solid-svg-icons'
+import {
+    faBoxesStacked,
+    faChildReaching,
+} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -24,6 +27,10 @@ const Footer = () => {
                                         to="/"
                                         className="text-xl flex   font-bold text-gray-200   "
                                     >
+                                        <FontAwesomeIcon
+                                            className="mt-1 mr-2 "
+                                            icon={faBoxesStacked}
+                                        />
                                         Super Stock
                                         <span className="flex h-[20px] mt-2 ml-2 w-[20px]">
                                             <span class="animate-ping  absolute inline-flex h-[15px] w-[15px] rounded-full bg-white opacity-75"></span>

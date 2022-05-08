@@ -4,6 +4,8 @@ import { signOut } from 'firebase/auth'
 import { Link } from 'react-router-dom'
 import auth from '../../Firebase/Firebase'
 import CustomLink from '../CustomLink/CustomLink'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBoxesStacked } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
     const [show, setShow] = useState(null)
@@ -21,6 +23,10 @@ const Navbar = () => {
                                 to="/"
                                 className="text-2xl text-white font-bold tracking-normal leading-tight ml-3 hidden lg:block"
                             >
+                                <FontAwesomeIcon
+                                    className="mt-1 mr-2 "
+                                    icon={faBoxesStacked}
+                                />
                                 Super Stock
                             </Link>
                         </div>
@@ -95,7 +101,7 @@ const Navbar = () => {
             <nav>
                 <div className="py-4 px-6 w-screen  flex md:hidden justify-between items-center bg-[#000000] fixed top-0 z-40">
                     <div className="w-24 font-bold  text-white">
-                        Super Stock
+                        <p>Super Stock</p>
                     </div>
                     <div>
                         <div
@@ -155,6 +161,10 @@ const Navbar = () => {
                                                     to="/"
                                                     className="text-base text-white ml-3"
                                                 >
+                                                    <FontAwesomeIcon
+                                                        className="mt-1 mr-2 "
+                                                        icon={faBoxesStacked}
+                                                    />
                                                     Super Stock
                                                 </Link>
                                             </div>
