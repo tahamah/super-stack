@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 import { signOut } from 'firebase/auth'
 import { Link } from 'react-router-dom'
 import auth from '../../Firebase/Firebase'
+import CustomLink from '../CustomLink/CustomLink'
 
 const Navbar = () => {
     const [show, setShow] = useState(null)
@@ -16,24 +17,27 @@ const Navbar = () => {
                 <div className="container px-6 h-16 flex justify-between items-center mx-auto">
                     <div className="flex items-center">
                         <div className="mr-10 flex items-center">
-                            <h3 className="text-2xl text-white font-bold tracking-normal leading-tight ml-3 hidden lg:block">
+                            <Link
+                                to="/"
+                                className="text-2xl text-white font-bold tracking-normal leading-tight ml-3 hidden lg:block"
+                            >
                                 Super Stock
-                            </h3>
+                            </Link>
                         </div>
                         <ul className="hidden ml-10 md:flex gap-5 items-center h-full">
-                            <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white  ">
-                                <Link to="/" className="cursor-pointer">
-                                    Home
-                                </Link>
+                            <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
+                                <CustomLink to="/home"> Home</CustomLink>
                             </li>
                             <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
-                                <Link to="/blogs"> Blogs</Link>
+                                <CustomLink to="/blogs"> Blogs</CustomLink>
                             </li>
                             <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
-                                <Link to="/others"> Others</Link>
+                                <CustomLink to="/others"> Others</CustomLink>
                             </li>
                             <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
-                                <Link to="/special">Special Deal</Link>
+                                <CustomLink to="/special">
+                                    Special Deal
+                                </CustomLink>
                             </li>
                         </ul>
                     </div>
@@ -42,13 +46,19 @@ const Navbar = () => {
                             {user ? (
                                 <div className="h-full gap-x-5 flex">
                                     <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-100">
-                                        <Link to="/manageAll">Manage All</Link>
+                                        <CustomLink to="/manageAll">
+                                            Manage All
+                                        </CustomLink>
                                     </div>
                                     <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-100">
-                                        <Link to="/myItems">My Items</Link>
+                                        <CustomLink to="/myItems">
+                                            My Items
+                                        </CustomLink>
                                     </div>
                                     <div className="w-20 h-full flex items-center justify-center  cursor-pointer text-gray-100">
-                                        <Link to="/addItems">Add Items</Link>
+                                        <CustomLink to="/addItems">
+                                            Add Items
+                                        </CustomLink>
                                     </div>
                                 </div>
                             ) : (
@@ -63,7 +73,7 @@ const Navbar = () => {
                                         Log Out
                                     </span>
                                 ) : (
-                                    <Link to="/login">Log In</Link>
+                                    <CustomLink to="/login">Log In</CustomLink>
                                 )}
                             </div>
                             <div className="flex items-center pl-8 relative">
@@ -141,9 +151,12 @@ const Navbar = () => {
                                     <div className="mt-6 flex w-full items-center justify-between">
                                         <div className="flex items-center justify-between w-full">
                                             <div className="flex items-center">
-                                                <p className="text-base text-white ml-3">
+                                                <Link
+                                                    to="/"
+                                                    className="text-base text-white ml-3"
+                                                >
                                                     Super Stock
-                                                </p>
+                                                </Link>
                                             </div>
                                             <div
                                                 id="cross"
@@ -183,46 +196,48 @@ const Navbar = () => {
                                         </div>
                                     </div>
                                     <ul className="f-m-m">
-                                        <Link to="/" className="cursor-pointer">
+                                        <div div className="cursor-pointer">
                                             <li className="text-gray-800 pt-8">
                                                 <div className="flex items-center">
                                                     <p className="text-white xl:text-base text-base ml-3">
-                                                        <Link to="/">Home</Link>
+                                                        <CustomLink to="/">
+                                                            Home
+                                                        </CustomLink>
                                                     </p>
                                                 </div>
                                             </li>
-                                        </Link>
-                                        <Link to="/" className="cursor-pointer">
+                                        </div>
+                                        <div className="cursor-pointer">
                                             <li className="text-gray-800 pt-8">
                                                 <div className="flex items-center justify-between">
                                                     <div className="flex items-center">
                                                         <p className="text-white xl:text-base md:text-2xl text-base ml-3">
-                                                            <Link to="/blogs">
+                                                            <CustomLink to="/blogs">
                                                                 Blogs
-                                                            </Link>
+                                                            </CustomLink>
                                                         </p>
                                                     </div>
                                                 </div>
                                             </li>
-                                        </Link>
-                                        <Link to="/" className="cursor-pointer">
+                                        </div>
+                                        <div className="cursor-pointer">
                                             <li className="text-white pt-8">
                                                 <div className="flex items-center">
                                                     <p className="text-white xl:text-base md:text-2xl text-base ml-3">
-                                                        <Link to="/others">
+                                                        <CustomLink to="/others">
                                                             Others
-                                                        </Link>
+                                                        </CustomLink>
                                                     </p>
                                                 </div>
                                             </li>
-                                        </Link>
+                                        </div>
                                         <li className="text-gray-800 pt-8 cursor-pointer">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
                                                     <p className="text-white xl:text-base md:text-2xl text-base ml-3">
-                                                        <Link to="/special">
+                                                        <CustomLink to="/special">
                                                             Special Deal
-                                                        </Link>
+                                                        </CustomLink>
                                                     </p>
                                                 </div>
                                             </div>
@@ -231,9 +246,9 @@ const Navbar = () => {
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
                                                     <p className="text-white xl:text-base md:text-2xl text-base ml-3">
-                                                        <Link to="/myItems">
+                                                        <CustomLink to="/myItems">
                                                             My Items
-                                                        </Link>
+                                                        </CustomLink>
                                                     </p>
                                                 </div>
                                             </div>
@@ -242,9 +257,9 @@ const Navbar = () => {
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
                                                     <p className="text-white xl:text-base md:text-2xl text-base ml-3">
-                                                        <Link to="/addItems">
+                                                        <CustomLink to="/addItems">
                                                             Add Items
-                                                        </Link>
+                                                        </CustomLink>
                                                     </p>
                                                 </div>
                                             </div>
@@ -253,9 +268,9 @@ const Navbar = () => {
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center">
                                                     <p className="text-white xl:text-base md:text-2xl text-base ml-3">
-                                                        <Link to="/manageAll">
+                                                        <CustomLink to="/manageAll">
                                                             Manage All
-                                                        </Link>
+                                                        </CustomLink>
                                                     </p>
                                                 </div>
                                             </div>
