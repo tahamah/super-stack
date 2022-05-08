@@ -32,7 +32,7 @@ const Navbar = () => {
                         </div>
                         <ul className="hidden ml-10 md:flex gap-5 items-center h-full">
                             <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
-                                <CustomLink to="/home"> Home</CustomLink>
+                                <CustomLink to="/"> Home</CustomLink>
                             </li>
                             <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
                                 <CustomLink to="/blogs"> Blogs</CustomLink>

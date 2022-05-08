@@ -31,50 +31,47 @@ const FourItems = () => {
             </div>
             <div className="grid mx-10 mt-10 gap-10  grid-cols-1 md:pt-28 md:grid-cols-2 max-w-7xl md:mx-auto">
                 {data.map((p) => (
-                    <div
-                        className="md:flex max-w-md mx-auto hover:bg-[#332467] duration-500  overflow-hidden rounded-lg shadow-lg  hover:text-gray-200 text-gray-700 transition ease-in-out delay-100 hover:drop-shadow-2xl hover:-translate-y-1   hover:scale-110  bg-gray-300"
-                        // data-aos="fade-up"
-                        // data-aos-duration="1000"
-                    >
-                        <div className="md:w-1/3  bg-cover">
-                            <img
-                                className=" md:h-full h-[270px] w-full"
-                                src={p.img}
-                                alt=""
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <div className="md:flex max-w-md mx-auto hover:bg-[#332467] duration-500  overflow-hidden rounded-lg shadow-lg  hover:text-gray-200 text-gray-700 transition ease-in-out delay-100 hover:drop-shadow-2xl hover:-translate-y-1   hover:scale-110  bg-gray-300">
+                            <div className="md:w-1/3  bg-cover">
+                                <img
+                                    className=" md:h-full h-[270px] w-full"
+                                    src={p.img}
+                                    alt=""
+                                    data-aos="zoom-in"
+                                    data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="1000"
+                                />
+                            </div>
+
+                            <div
+                                className="md:w-2/3 w-full p-4 md:p-4"
                                 data-aos="zoom-in"
                                 data-aos-easing="ease-out-cubic"
                                 data-aos-duration="1000"
-                            />
-                        </div>
-
-                        <div
-                            className="md:w-2/3 w-full p-4 md:p-4"
-                            data-aos="zoom-in"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="1000"
-                        >
-                            <h1 className="text-2xl font-bold ">
-                                {p.product_name}
-                            </h1>
-                            <p className="">by {p.supplier_name}</p>
-
-                            <p className="mt-2 text-sm  ">
-                                {p.body.slice(0, 100)}
-                            </p>
-                            <p className="mt-5">
-                                Available: {p.quantity} {p.unit}
-                            </p>
-
-                            <div className="md:flex justify-between mt-3 item-center">
-                                <h1 className="text-lg font-bold md:text-xl">
-                                    ${p.price}
-                                    <span className="text-sm ml-2 font-normal text-gray-00 ">
-                                        par ( {p.unit} )
-                                    </span>
+                            >
+                                <h1 className="text-2xl font-bold ">
+                                    {p.product_name}
                                 </h1>
-                                <button
-                                    onClick={() => navigateToUpdate(p._id)}
-                                    className="inline-flex
+                                <p className="">by {p.supplier_name}</p>
+
+                                <p className="mt-2 text-sm  ">
+                                    {p.body.slice(0, 100)}
+                                </p>
+                                <p className="mt-5">
+                                    Available: {p.quantity} {p.unit}
+                                </p>
+
+                                <div className="md:flex justify-between mt-3 item-center">
+                                    <h1 className="text-lg font-bold md:text-xl">
+                                        ${p.price}
+                                        <span className="text-sm ml-2 font-normal text-gray-00 ">
+                                            par ( {p.unit} )
+                                        </span>
+                                    </h1>
+                                    <button
+                                        onClick={() => navigateToUpdate(p._id)}
+                                        className="inline-flex
                                     items-center
                                     mt-4
                                     px-2
@@ -90,9 +87,10 @@ const FourItems = () => {
                                     font-bold
                                     lg:mb-0
                                     hover:text-gray-100 "
-                                >
-                                    Update
-                                </button>
+                                    >
+                                        Update
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
