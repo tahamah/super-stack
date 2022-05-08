@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
+import PageTitle from '../PageTitle/PageTitle'
 
 const UpdateProduct = () => {
     const [productData, setProductData] = useState([])
@@ -165,6 +166,7 @@ const UpdateProduct = () => {
     }, [])
     return (
         <div className="md:min-h-screen overflow-x-hidden pt-16 bg-[#03203C]">
+            <PageTitle title={'Update Product'} />
             <ToastContainer />
             <div className="max-w-lg  mx-4 md:mx-auto  bg-white rounded-lg shadow-md dark:bg-gray-800">
                 <img

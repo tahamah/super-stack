@@ -1,5 +1,6 @@
 import React from 'react'
 import BeforeAfterSlider from 'react-before-after-slider'
+import PageTitle from '../PageTitle/PageTitle'
 
 const SpecialDeal = () => {
     const before1 = 'https://i.ibb.co/4jbcw5m/3.png'
@@ -11,6 +12,7 @@ const SpecialDeal = () => {
 
     return (
         <div className="md:h-[110vh] overflow-x-hidden bg-[#011520]">
+            <PageTitle title={'Special Deal'} />
             <div className="relative">
                 <h1
                     className="text-6xl  text-green-500  text-center pt-40 font-bold"

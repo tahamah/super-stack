@@ -7,6 +7,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
 import auth from '../../Firebase/Firebase'
 import axios from 'axios'
+import PageTitle from '../PageTitle/PageTitle'
 
 const MyItems = () => {
     const [products, setProducts] = useState([])
@@ -49,6 +50,7 @@ const MyItems = () => {
     }
     return (
         <div className="py-20 bg-[#120E43] md:min-h-[110vh]">
+            <PageTitle title={'My Items'} />
             <ToastContainer />
             <div className="mx-auto container bg-gray-800 text-gray-500 shadow rounded">
                 <div className="flex flex-col lg:flex-row p-4 lg:p-8 justify-between items-start lg:items-stretch w-full">

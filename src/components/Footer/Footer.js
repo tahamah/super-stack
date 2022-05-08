@@ -1,7 +1,4 @@
-import {
-    faBoxesStacked,
-    faChildReaching,
-} from '@fortawesome/free-solid-svg-icons'
+import { faBoxesStacked } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -33,8 +30,8 @@ const Footer = () => {
                                         />
                                         Super Stock
                                         <span className="flex h-[20px] mt-2 ml-2 w-[20px]">
-                                            <span class="animate-ping  absolute inline-flex h-[15px] w-[15px] rounded-full bg-white opacity-75"></span>
-                                            <span class="relative inline-flex rounded-full h-[15px] w-[15px] bg-white"></span>
+                                            <span className="animate-ping  absolute inline-flex h-[15px] w-[15px] rounded-full bg-white opacity-75"></span>
+                                            <span className="relative inline-flex rounded-full h-[15px] w-[15px] bg-white"></span>
                                         </span>
                                     </Link>
                                 </div>

@@ -6,6 +6,7 @@ import {
 } from 'react-firebase-hooks/auth'
 import { toast, ToastContainer } from 'react-toastify'
 import { Navigate, useLocation } from 'react-router-dom'
+import PageTitle from '../PageTitle/PageTitle'
 
 const EmailVerification = () => {
     const [sendEmailVerification, sending, error] =
@@ -20,6 +21,7 @@ const EmailVerification = () => {
 
     return (
         <div className=" md:mt-44 pt-20 h-[100vh]">
+            <PageTitle title={'Email Verification'} />
             <section>
                 <div className="md:py-12 relative w-full px-12 py-40 mx-auto lg:px-24 max-w-7xl">
                     <div className="w-full max-w-lg mx-auto my-4 bg-white shadow-xl rounded-xl">

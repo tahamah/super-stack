@@ -14,6 +14,7 @@ import {
     useSignInWithGoogle,
 } from 'react-firebase-hooks/auth'
 import axios from 'axios'
+import PageTitle from '../PageTitle/PageTitle'
 
 const LogIn = () => {
     const [userInfo, setUserInfo] = useState({ email: '', password: '' })
@@ -92,6 +93,7 @@ const LogIn = () => {
 
     return (
         <section className=" md:h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#03203C]">
+            <PageTitle title={'LogIn'} />
             <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800  lg:max-w-4xl">
                 <div
                     className="hidden bg-cover lg:block lg:w-1/2"

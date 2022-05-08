@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
+import PageTitle from '../PageTitle/PageTitle'
 import Spinner from '../Spinner/Spinner'
 
 const ManageAll = () => {
@@ -28,6 +29,7 @@ const ManageAll = () => {
 
     return (
         <>
+            <PageTitle title={'Manage All'} />
             {products.length === 0 ? (
                 <Spinner />
             ) : (

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth'
 import { ToastContainer, toast } from 'react-toastify'
 import auth from '../../Firebase/Firebase'
+import PageTitle from '../PageTitle/PageTitle'
 
 const PassReset = () => {
     const [email, setEmail] = useState()
@@ -21,6 +22,7 @@ const PassReset = () => {
     }
     return (
         <div className="h-[100vh] px-10 pt-20 md:pt-40">
+            <PageTitle title={'Password Reset'} />
             <div className="w-full mt-40 max-w-sm p-6 m-auto bg-white rounded-md shadow-md dark:bg-gray-800">
                 <h1 className="text-3xl font-semibold text-center text-gray-700 dark:text-white">
                     Enter your Email

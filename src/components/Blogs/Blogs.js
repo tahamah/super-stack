@@ -1,8 +1,10 @@
 import React from 'react'
+import PageTitle from '../PageTitle/PageTitle'
 
 const Blogs = () => {
     return (
         <div className="bg-[#03203C]">
+            <PageTitle title={'Blogs'} />
             <div className="xl:w-1/2 mx-auto py-28 w-11/12">
                 <h1
                     className="md:text-6xl text-5xl font-bold 2xl:leading-10 leading-0 text-center text-gray-100"

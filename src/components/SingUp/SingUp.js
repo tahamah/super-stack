@@ -10,6 +10,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 import auth from '../../Firebase/Firebase'
+import PageTitle from '../PageTitle/PageTitle'
 
 const SingUp = () => {
     const [showPass, setShowPass] = useState(false)
@@ -96,6 +97,7 @@ const SingUp = () => {
 
     return (
         <section className=" md:h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#03203C]">
+            <PageTitle title={'SingUp'} />
             <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800  lg:max-w-4xl">
                 <div
                     className="hidden bg-cover lg:block lg:w-1/2"

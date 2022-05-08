@@ -6,6 +6,7 @@ import SpecialDeal from '../SpecialDeal/SpecialDeal'
 import Spinner from '../Spinner/Spinner'
 import StockGallery from '../StockGallery/StockGallery'
 import Footer from '../Footer/Footer'
+import PageTitle from '../PageTitle/PageTitle'
 
 const Home = () => {
     const [data] = useInventoriesData()
@@ -20,6 +21,7 @@ const Home = () => {
                     <SpecialDeal />
                     <StockGallery />
                     <Footer />
+                    <PageTitle title={'Home'} />
                 </>
             )}
         </div>

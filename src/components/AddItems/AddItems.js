@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 import { useNavigate } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
 import auth from '../../Firebase/Firebase'
+import PageTitle from '../PageTitle/PageTitle'
 
 const AddItems = () => {
     const [user, loading, error] = useAuthState(auth)
@@ -41,6 +42,7 @@ const AddItems = () => {
     }
     return (
         <div className="md:min-h-[130vh] -mt-[88px] overflow-x-hidden flex bg-[#03203C] align-center">
+            <PageTitle title={'Add Items'} />
             <div className="md:w-1/2 w-full px-5 flex flex-col justify-between">
                 <div className="hidden md:block"></div>
                 <div className="pb-20 pt-44 md:pt-0">
