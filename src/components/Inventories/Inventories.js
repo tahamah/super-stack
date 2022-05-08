@@ -10,7 +10,7 @@ const FourItems = () => {
     }
 
     return (
-        <div className="md:min-h-[150vh] overflow-x-hidden bg-[#120E43] pb-10 md:pb-0 flex flex-col justify-center">
+        <div className="md:min-h-[150vh] overflow-x-hidden  bg-[#03203C] pb-10 md:pb-0 flex flex-col justify-center">
             <div className="xl:w-1/2 mx-auto w-11/12">
                 <h1
                     className="md:text-6xl text-5xl font-bold 2xl:leading-10 leading-0 text-center text-gray-100"

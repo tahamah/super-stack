@@ -37,13 +37,14 @@ const Navbar = () => {
                             <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
                                 <CustomLink to="/blogs"> Blogs</CustomLink>
                             </li>
-                            <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
-                                <CustomLink to="/others"> Others</CustomLink>
-                            </li>
+
                             <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
                                 <CustomLink to="/special">
                                     Special Deal
                                 </CustomLink>
+                            </li>
+                            <li className="cursor-pointer h-full flex items-center text-sm font-bold  text-white   ">
+                                <CustomLink to="/others"> Others</CustomLink>
                             </li>
                         </ul>
                     </div>

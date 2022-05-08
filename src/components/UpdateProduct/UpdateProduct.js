@@ -164,9 +164,9 @@ const UpdateProduct = () => {
             })
     }, [])
     return (
-        <div className="md:min-h-screen">
+        <div className="md:min-h-screen pt-16 bg-[#03203C]">
             <ToastContainer />
-            <div className="max-w-2xl  mx-4 md:mx-auto overflow-hidden mt-16 bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div className="max-w-lg  mx-4 md:mx-auto overflow-hidden  bg-white rounded-lg shadow-md dark:bg-gray-800">
                 <img
                     className="object-cover  w-full h-64"
                     src={img}
@@ -229,7 +229,7 @@ const UpdateProduct = () => {
                                     placeholder="Description"
                                     value={body}
                                     type="text"
-                                    rows="6"
+                                    rows="3"
                                     className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                     required
                                     readOnly
@@ -292,9 +292,19 @@ const UpdateProduct = () => {
                                     Add Quantity
                                 </button>
                             </div>
-                            <button onClick={() => navigate(-1)}>
-                                Go Back
-                            </button>
+                            <div className="flex justify-end mt-4">
+                                <div
+                                    data-aos="fade-left"
+                                    data-aos-duration="1000"
+                                >
+                                    <button
+                                        className="bg-red-600 text-white py-1 px-5 hover:-translate-x-3 duration-500  rounded-full mt-5"
+                                        onClick={() => navigate(-1)}
+                                    >
+                                        Go Back
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

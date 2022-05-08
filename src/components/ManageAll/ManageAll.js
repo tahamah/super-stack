@@ -43,7 +43,7 @@ const ManageAll = () => {
                                 </div>
                                 <div className="w-full lg:w-2/3 flex flex-col lg:flex-row items-start lg:items-center justify-end">
                                     <div className="lg:ml-6 flex items-center">
-                                        <button className="bg-gray-200 transition duration-150 ease-in-out focus:outline-none border border-transparent focus:border-gray-800 focus:shadow-outline-gray hover:bg-gray-300 rounded font-bold text-indigo-700 px-5 h-8 flex items-center text-sm">
+                                        <button className="bg-gray-200 transition duration-150 ease-in-out focus:outline-none border border-transparent focus:border-gray-800 focus:shadow-outline-gray hover:bg-gray-300 rounded md:font-bold  font-normaltext-indigo-700 px-5 h-8 flex items-center text-sm">
                                             <Link to="/addItems">
                                                 Add New Items
                                             </Link>
@@ -89,27 +89,27 @@ const ManageAll = () => {
                                 <table className="min-w-full bg-white    ">
                                     <thead>
                                         <tr className="w-full h-16 border-gray-300  bg-gray-800  border-b py-8">
-                                            <th className="pl-8 text-gray-200 font-bold     pr-6 text-left text-sm tracking-normal leading-4">
+                                            <th className="pl-8 text-gray-200 md:font-bold  font-normal    pr-6 text-left text-sm tracking-normal leading-4">
                                                 Img
                                             </th>
 
-                                            <th className="text-gray-200 font-bold     pr-6 text-left text-sm tracking-normal leading-4">
+                                            <th className="text-gray-200 md:font-bold  font-normal    pr-6 text-left text-sm tracking-normal leading-4">
                                                 <p>Name</p>
                                                 <small>Supplier Name</small>
                                             </th>
-                                            <th className="text-gray-200 font-bold     pr-6 text-left text-sm tracking-normal hidden md:block leading-4">
+                                            <th className="text-gray-200 md:font-bold  font-normal    pr-6 text-left text-sm tracking-normal hidden md:block leading-4">
                                                 <p>Description</p>
                                             </th>
-                                            <th className="text-gray-200 font-bold     pr-6 text-left text-sm tracking-normal leading-4">
+                                            <th className="text-gray-200 md:font-bold  font-normal    pr-6 text-left text-sm tracking-normal leading-4">
                                                 <p> Price</p>
                                                 <small> unit</small>
                                             </th>
 
-                                            <th className="text-gray-200 font-bold     pr-6 text-left text-sm tracking-normal leading-4">
+                                            <th className="text-gray-200 md:font-bold  font-normal    pr-6 text-left text-sm tracking-normal leading-4">
                                                 <p> Quantity</p>
                                             </th>
 
-                                            <td className="text-gray-200 font-bold     pr-8 text-left text-sm tracking-normal leading-4">
+                                            <td className="text-gray-200 md:font-bold  font-normal    pr-8 text-left text-sm tracking-normal leading-4">
                                                 Delete
                                             </td>
                                         </tr>
@@ -122,7 +122,7 @@ const ManageAll = () => {
                                                 data-aos="fade-right"
                                                 data-aos-duration="2000"
                                             >
-                                                <td className="pl-8 pr-6 leading-4">
+                                                <td className="md:pl-8 pl-4 pr-6 leading-4">
                                                     <div className="h-10 w-14">
                                                         <img
                                                             className="h-full w-full  overflow-hidden shadow"
@@ -132,7 +132,7 @@ const ManageAll = () => {
                                                     </div>
                                                 </td>
 
-                                                <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 font-semibold   tracking-normal leading-4">
+                                                <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 md:font-semibold font-normal   tracking-normal leading-4">
                                                     <p className="mb-2">
                                                         {product.product_name}
                                                     </p>
@@ -150,12 +150,12 @@ const ManageAll = () => {
                                                     </div>
                                                 </td>
 
-                                                <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 font-semibold     tracking-normal leading-4">
+                                                <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 md:font-semibold font-normal     tracking-normal leading-4">
                                                     <p>${product.price}</p>
                                                     <p>par {product.unit}</p>
                                                 </td>
 
-                                                <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 font-semibold   tracking-normal leading-4">
+                                                <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 md:font-semibold font-normal   tracking-normal leading-4">
                                                     {product.quantity}
                                                 </td>
 
@@ -168,7 +168,7 @@ const ManageAll = () => {
                                                         }
                                                         className=" cursor-pointer focus:outline-none"
                                                     >
-                                                        <div className="text-gray-100 p-2 border-transparent rounded-full border font-bold hover:bg-red-500 duration-500 cursor-pointer">
+                                                        <div className="text-gray-100 p-2 border-transparent rounded-full border md:font-bold  font-normalhover:bg-red-500 duration-500 cursor-pointer">
                                                             <FontAwesomeIcon
                                                                 icon={
                                                                     faTrashCan

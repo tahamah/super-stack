@@ -91,7 +91,7 @@ const LogIn = () => {
     }, [googleUser, user])
 
     return (
-        <section className=" md:h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#000]">
+        <section className=" md:h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#03203C]">
             <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800  lg:max-w-4xl">
                 <div className="hidden bg-cover lg:block lg:w-1/2">
                     <img src="https://i.ibb.co/p1Cj2g7/log-in.png" alt="" />
@@ -99,7 +99,7 @@ const LogIn = () => {
 
                 <div className="w-full px-6 py-8 md:px-8 lg:w-1/2">
                     <p className="text-4xl py-8 text-center text-gray-900 ">
-                        Brand Name
+                        Super Stock
                     </p>
 
                     <p className="text-2xl text-center text-gray-600 ">
