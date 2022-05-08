@@ -93,20 +93,34 @@ const LogIn = () => {
     return (
         <section className=" md:h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#03203C]">
             <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800  lg:max-w-4xl">
-                <div className="hidden bg-cover lg:block lg:w-1/2">
+                <div
+                    className="hidden bg-cover lg:block lg:w-1/2"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                >
                     <img src="https://i.ibb.co/p1Cj2g7/log-in.png" alt="" />
                 </div>
 
                 <div className="w-full px-6 py-8 md:px-8 lg:w-1/2">
-                    <p className="text-4xl py-8 text-center text-gray-900 ">
+                    <p
+                        className="text-4xl py-8 text-center text-gray-900"
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >
                         Super Stock
                     </p>
 
-                    <p className="text-2xl text-center text-gray-600 ">
+                    <p
+                        className="text-2xl text-center text-gray-600 "
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >
                         Log In
                     </p>
 
                     <div
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
                         onClick={() => signInWithGoogle()}
                         className="flex cursor-pointer items-center justify-center mt-4 text-gray-600 transition-colors duration-200 transform border rounded-lg dark:border-gray-700   hover:bg-gray-50 "
                     >
@@ -136,7 +150,11 @@ const LogIn = () => {
                         </span>
                     </div>
 
-                    <div className="flex items-center justify-between mt-4">
+                    <div
+                        className="flex items-center justify-between mt-4"
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >
                         <span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
 
                         <Link
@@ -149,7 +167,11 @@ const LogIn = () => {
                         <span className="w-1/5 border-b dark:border-gray-400 lg:w-1/4"></span>
                     </div>
                     <form onSubmit={handleLogIn}>
-                        <div className="mt-4">
+                        <div
+                            className="mt-4"
+                            data-aos="fade-right"
+                            data-aos-duration="3000"
+                        >
                             <label
                                 className="block mb-2 text-sm font-medium text-gray-600  "
                                 htmlFor="LoggingEmailAddress"
@@ -168,7 +190,11 @@ const LogIn = () => {
                             )}
                         </div>
 
-                        <div className="mt-4">
+                        <div
+                            className="mt-4"
+                            data-aos="fade-right"
+                            data-aos-duration="3000"
+                        >
                             <div className="flex justify-between">
                                 <label
                                     className="block mb-2 text-sm font-medium text-gray-600  "
@@ -207,7 +233,11 @@ const LogIn = () => {
                             )}
                         </div>
 
-                        <div className="mt-8">
+                        <div
+                            className="mt-8"
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                        >
                             <ToastContainer />
                             <button
                                 type="submit"
@@ -218,7 +248,11 @@ const LogIn = () => {
                         </div>
                     </form>
 
-                    <div className="flex items-center justify-between mt-4">
+                    <div
+                        className="flex items-center justify-between mt-4"
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                    >
                         <p className="mt-6 text-sm text-center text-gray-400">
                             Don&#x27;t have an account yet?{' '}
                             <Link

@@ -223,7 +223,11 @@ const AddItems = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-1/2 hidden  md:flex flex-col justify-between">
+            <div
+                className="w-1/2 hidden  md:flex flex-col justify-between"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+            >
                 <div className="pt-[100px]">
                     <img src="https://i.ibb.co/1njvBPz/about.png" alt="" />
                 </div>

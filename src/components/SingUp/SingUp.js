@@ -97,20 +97,36 @@ const SingUp = () => {
     return (
         <section className=" md:h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#03203C]">
             <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800  lg:max-w-4xl">
-                <div className="hidden bg-cover lg:block lg:w-1/2">
+                <div
+                    className="hidden bg-cover lg:block lg:w-1/2"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                >
                     <img src="https://i.ibb.co/p1Cj2g7/log-in.png" alt="" />
                 </div>
                 <ToastContainer />
                 <div className="w-full px-6 py-8 md:px-8 lg:w-1/2">
-                    <p className="text-4xl py-8 text-center text-gray-900 ">
+                    <p
+                        className="text-4xl py-8 text-center text-gray-900 "
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >
                         Super Stock
                     </p>
 
-                    <p className="text-2xl text-center text-gray-600 ">
+                    <p
+                        className="text-2xl text-center text-gray-600 "
+                        data-aos="fade-right"
+                        data-aos-duration="2000"
+                    >
                         Sing Up
                     </p>
                     <form onSubmit={handleSingUp}>
-                        <div className="mt-4">
+                        <div
+                            className="mt-4"
+                            data-aos="fade-left"
+                            data-aos-duration="2000"
+                        >
                             <label
                                 className="block mb-2 text-sm font-medium text-gray-600  "
                                 htmlFor="LoggingEmailAddress"
@@ -129,7 +145,11 @@ const SingUp = () => {
                             )}
                         </div>
 
-                        <div className="mt-4">
+                        <div
+                            className="mt-4"
+                            data-aos="fade-right"
+                            data-aos-duration="2000"
+                        >
                             <label
                                 className="block mb-2 text-sm font-medium text-gray-600  "
                                 htmlFor="loggingPassword"
@@ -159,7 +179,11 @@ const SingUp = () => {
                                 </p>
                             )}
                         </div>
-                        <div className="mt-4">
+                        <div
+                            className="mt-4"
+                            data-aos="fade-left"
+                            data-aos-duration="2000"
+                        >
                             <label
                                 className="block mb-2 text-sm font-medium text-gray-600  "
                                 htmlFor="confirmLoggingPassword"
@@ -191,7 +215,11 @@ const SingUp = () => {
                             )}
                         </div>
 
-                        <div className="mt-8">
+                        <div
+                            className="mt-8"
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                        >
                             <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-gray-700 rounded hover:bg-gray-600 focus:outline-none focus:bg-gray-600">
                                 Sing Up
                             </button>
@@ -199,7 +227,11 @@ const SingUp = () => {
                     </form>
 
                     <div className="flex items-center justify-between mt-4">
-                        <p className="mt-6 text-sm text-center text-gray-400">
+                        <p
+                            className="mt-6 text-sm text-center text-gray-400"
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                        >
                             Already have an account?
                             <Link
                                 to="/login"
