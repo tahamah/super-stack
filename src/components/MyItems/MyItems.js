@@ -123,7 +123,7 @@ const MyItems = () => {
                                     data-aos="fade-right"
                                     data-aos-duration="2000"
                                 >
-                                    <td className="pl-8 pr-6 leading-4">
+                                    <td className="md:pl-8 pl-4 pr-6 leading-4">
                                         <div className="h-10 w-14">
                                             <img
                                                 className="h-full w-full  overflow-hidden shadow"
@@ -133,7 +133,7 @@ const MyItems = () => {
                                         </div>
                                     </td>
 
-                                    <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 font-semibold   tracking-normal leading-4">
+                                    <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 md:font-semibold font-normal   tracking-normal leading-4">
                                         <p className="mb-2">
                                             {product.product_name}
                                         </p>
@@ -147,12 +147,12 @@ const MyItems = () => {
                                         </div>
                                     </td>
 
-                                    <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 font-semibold     tracking-normal leading-4">
+                                    <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 md:font-semibold font-normal     tracking-normal leading-4">
                                         <p>${product.price}</p>
                                         <p>par {product.unit}</p>
                                     </td>
 
-                                    <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 font-semibold   tracking-normal leading-4">
+                                    <td className="text-sm pr-6 whitespace-no-wrap text-gray-200 md:font-semibold font-normal   tracking-normal leading-4">
                                         {product.quantity}
                                     </td>
 
@@ -163,7 +163,7 @@ const MyItems = () => {
                                             }
                                             className=" cursor-pointer focus:outline-none"
                                         >
-                                            <div className="text-gray-100 p-2 border-transparent rounded-full border font-bold hover:bg-red-500 duration-500 cursor-pointer">
+                                            <div className="text-gray-100 p-2 border-transparent rounded-full border md:font-bold  font-normal hover:bg-red-600 duration-500 cursor-pointer">
                                                 <FontAwesomeIcon
                                                     icon={faTrashCan}
                                                 />

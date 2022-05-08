@@ -164,9 +164,9 @@ const UpdateProduct = () => {
             })
     }, [])
     return (
-        <div className="md:min-h-screen pt-16 bg-[#03203C]">
+        <div className="md:min-h-screen overflow-x-hidden pt-16 bg-[#03203C]">
             <ToastContainer />
-            <div className="max-w-lg  mx-4 md:mx-auto overflow-hidden  bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div className="max-w-lg  mx-4 md:mx-auto  bg-white rounded-lg shadow-md dark:bg-gray-800">
                 <img
                     className="object-cover  w-full h-64"
                     src={img}
@@ -177,7 +177,11 @@ const UpdateProduct = () => {
                     <div className="mt-4">
                         <div className="mt-6">
                             <div className="md:flex ">
-                                <div className="md:w-1/2">
+                                <div
+                                    className="md:w-1/2"
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
+                                >
                                     <label
                                         htmlFor="username"
                                         className="block text-sm text-gray-800 dark:text-gray-200"
@@ -195,7 +199,11 @@ const UpdateProduct = () => {
                                         disabled
                                     />
                                 </div>
-                                <div className="md:w-1/2 md:mt-0 mt-6 md:md-0  md:pl-10">
+                                <div
+                                    className="md:w-1/2 md:mt-0 mt-6 md:md-0  md:pl-10"
+                                    data-aos="fade-left"
+                                    data-aos-duration="1000"
+                                >
                                     <label
                                         htmlFor="username"
                                         className="block text-sm text-gray-800 dark:text-gray-200"
@@ -214,7 +222,11 @@ const UpdateProduct = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="mt-4">
+                            <div
+                                className="mt-4"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
                                 <div className="flex items-center justify-between">
                                     <label
                                         htmlFor="password"
@@ -238,7 +250,11 @@ const UpdateProduct = () => {
                             </div>
 
                             <div className="md:flex gap-10 mt-4">
-                                <div className="md:w-1/2 md:mt-0 mt-6 md:md-0  ">
+                                <div
+                                    className="md:w-1/2 md:mt-0 mt-6 md:md-0 "
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
+                                >
                                     <label
                                         htmlFor="username"
                                         className="block text-sm text-gray-800 dark:text-gray-200"
@@ -255,7 +271,11 @@ const UpdateProduct = () => {
                                         disabled
                                     />
                                 </div>
-                                <div className="md:w-1/2 md:mt-0 mt-6 md:md-0  ">
+                                <div
+                                    className="md:w-1/2 md:mt-0 mt-6 md:md-0 "
+                                    data-aos="fade-left"
+                                    data-aos-duration="1000"
+                                >
                                     <label
                                         htmlFor="username"
                                         className="block text-sm text-gray-800 dark:text-gray-200"
@@ -278,13 +298,18 @@ const UpdateProduct = () => {
 
                             <div className="mt-6 flex gap-10">
                                 <button
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
                                     onClick={handDelivered}
                                     type="button"
                                     className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-red-500 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
                                 >
                                     Delivered
                                 </button>
+
                                 <button
+                                    data-aos="fade-left"
+                                    data-aos-duration="1000"
                                     onClick={handAdd}
                                     type="submit"
                                     className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-green-500 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
@@ -292,7 +317,7 @@ const UpdateProduct = () => {
                                     Add Quantity
                                 </button>
                             </div>
-                            <div className="flex justify-end mt-4">
+                            <div className=" md:flex justify-end mt-4">
                                 <div
                                     data-aos="fade-left"
                                     data-aos-duration="1000"

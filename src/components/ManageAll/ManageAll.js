@@ -168,7 +168,7 @@ const ManageAll = () => {
                                                         }
                                                         className=" cursor-pointer focus:outline-none"
                                                     >
-                                                        <div className="text-gray-100 p-2 border-transparent rounded-full border md:font-bold  font-normalhover:bg-red-500 duration-500 cursor-pointer">
+                                                        <div className="text-gray-100 p-2 border-transparent rounded-full border md:font-bold  font-normal hover:bg-red-600 duration-500 cursor-pointer">
                                                             <FontAwesomeIcon
                                                                 icon={
                                                                     faTrashCan
