@@ -94,7 +94,7 @@ const LogIn = () => {
     return (
         <section className=" md:h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#03203C]">
             <PageTitle title={'LogIn'} />
-            <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800  lg:max-w-4xl">
+            <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg  lg:max-w-4xl">
                 <div
                     className="hidden bg-cover lg:block lg:w-1/2"
                     data-aos="fade-right"
@@ -124,7 +124,7 @@ const LogIn = () => {
                         data-aos="fade-left"
                         data-aos-duration="2000"
                         onClick={() => signInWithGoogle()}
-                        className="flex cursor-pointer items-center justify-center mt-4 text-gray-600 transition-colors duration-200 transform border rounded-lg dark:border-gray-700   hover:bg-gray-50 "
+                        className="flex cursor-pointer items-center justify-center mt-4 text-gray-600 transition-colors duration-200 transform border rounded-lg    hover:bg-gray-50 "
                     >
                         <div className="px-4 py-2">
                             <svg className="w-6 h-6" viewBox="0 0 40 40">
@@ -157,16 +157,16 @@ const LogIn = () => {
                         data-aos="fade-left"
                         data-aos-duration="2000"
                     >
-                        <span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
+                        <span className="w-1/5 border-b  lg:w-1/4"></span>
 
                         <Link
                             to="/login"
-                            className="text-xs text-center text-gray-500 uppercase dark:text-gray-400 hover:underline"
+                            className="text-xs text-center text-gray-500 uppercase  hover:underline"
                         >
                             or login with email
                         </Link>
 
-                        <span className="w-1/5 border-b dark:border-gray-400 lg:w-1/4"></span>
+                        <span className="w-1/5 border-b  lg:w-1/4"></span>
                     </div>
                     <form onSubmit={handleLogIn}>
                         <div
@@ -184,7 +184,7 @@ const LogIn = () => {
                                 onChange={handEmailChange}
                                 id="LoggingEmailAddress"
                                 placeholder="example@example.com"
-                                className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
+                                className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md  focus:border-blue-400 focus:ring-opacity-40  focus:outline-none focus:ring focus:ring-blue-300"
                                 type="email"
                             />
                             {error && (
@@ -206,7 +206,7 @@ const LogIn = () => {
                                 </label>
                                 <Link
                                     to="/reset"
-                                    className="text-xs cursor-pointer text-blue-500 dark:text-gray-300 hover:underline"
+                                    className="text-xs cursor-pointer text-blue-500  hover:underline"
                                 >
                                     Forget Password?
                                 </Link>
@@ -225,7 +225,7 @@ const LogIn = () => {
                                     type={showPass ? 'text' : 'password'}
                                     id="loggingPassword"
                                     placeholder="Your Password"
-                                    className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
+                                    className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md  focus:border-blue-400 focus:ring-opacity-40  focus:outline-none focus:ring focus:ring-blue-300"
                                 />
                             </div>
                             {error && (

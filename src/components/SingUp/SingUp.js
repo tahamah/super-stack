@@ -98,7 +98,7 @@ const SingUp = () => {
     return (
         <section className=" md:h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#03203C]">
             <PageTitle title={'SingUp'} />
-            <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800  lg:max-w-4xl">
+            <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg  lg:max-w-4xl">
                 <div
                     className="hidden bg-cover lg:block lg:w-1/2"
                     data-aos="fade-right"
@@ -139,7 +139,7 @@ const SingUp = () => {
                                 onChange={handEmailChange}
                                 id="LoggingEmailAddress"
                                 placeholder="example@example.com"
-                                className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
+                                className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md   focus:border-blue-400 focus:ring-opacity-40  focus:outline-none focus:ring focus:ring-blue-300"
                                 type="email"
                             />
                             {error && (
@@ -172,7 +172,7 @@ const SingUp = () => {
                                     type={showPass ? 'text' : 'password'}
                                     id="loggingPassword"
                                     placeholder="Your Password"
-                                    className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
+                                    className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md focus:border-blue-400 focus:ring-opacity-40  focus:outline-none focus:ring focus:ring-blue-300"
                                 />
                             </div>
                             {error && (
@@ -206,7 +206,7 @@ const SingUp = () => {
                                     onChange={handConPasswordChange}
                                     id="confirmLoggingPassword"
                                     placeholder="Confirm Password"
-                                    className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
+                                    className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md  focus:border-blue-400 focus:ring-opacity-40  focus:outline-none focus:ring focus:ring-blue-300"
                                     type={showConPass ? 'text' : 'password'}
                                 />
                             </div>

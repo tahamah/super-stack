@@ -7,7 +7,6 @@ const CustomLink = ({ children, to, ...props }) => {
     return (
         <div>
             <Link
-                // style={{ textDecoration: match ? 'underline' : 'none' }}
                 className={
                     match
                         ? ' border-green-500 border-[3px] border-r-transparent border-r-[0px] border-l-transparent border-l-[0px]'

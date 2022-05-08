@@ -23,8 +23,8 @@ const PassReset = () => {
     return (
         <div className="h-[100vh] px-10 pt-20 md:pt-40">
             <PageTitle title={'Password Reset'} />
-            <div className="w-full mt-40 max-w-sm p-6 m-auto bg-white rounded-md shadow-md dark:bg-gray-800">
-                <h1 className="text-3xl font-semibold text-center text-gray-700 dark:text-white">
+            <div className="w-full mt-40 max-w-sm p-6 m-auto bg-white rounded-md shadow-md ">
+                <h1 className="text-3xl font-semibold text-center text-gray-700 ">
                     Enter your Email
                 </h1>
 
@@ -32,7 +32,7 @@ const PassReset = () => {
                     <div>
                         <label
                             htmlFor="username"
-                            className="block text-sm text-gray-800 dark:text-gray-200"
+                            className="block text-sm text-gray-800 "
                         >
                             Email
                         </label>
@@ -40,7 +40,7 @@ const PassReset = () => {
                             onBlur={handEmailChange}
                             placeholder="example@gmail.com"
                             type="text"
-                            className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                            className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md  focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                         />
                     </div>
 

@@ -6,7 +6,7 @@ import auth from '../../Firebase/Firebase'
 import PageTitle from '../PageTitle/PageTitle'
 
 const AddItems = () => {
-    const [user, loading, error] = useAuthState(auth)
+    const [user] = useAuthState(auth)
     const navigate = useNavigate()
     const handAdd = (e) => {
         e.preventDefault()
@@ -48,7 +48,7 @@ const AddItems = () => {
                 <div className="pb-20 pt-44 md:pt-0">
                     <div className="w-full  md:max-w-lg max-w-sm p-6 m-auto  bg-[#120E43] duration-500 rounded-md shadow-md">
                         <h1
-                            className="text-3xl mb-20  font-bold text-center text-gray-100 duration-500  dark:text-white"
+                            className="text-3xl mb-20  font-bold text-center text-gray-100 duration-500  "
                             data-aos="fade-up"
                             data-aos-duration="1000"
                         >
@@ -73,7 +73,7 @@ const AddItems = () => {
                                         name="productName"
                                         placeholder="Product Name"
                                         type="text"
-                                        className="block w-full  px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full  px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md    focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                         required
                                     />
                                 </div>
@@ -92,7 +92,7 @@ const AddItems = () => {
                                         name="supplierName"
                                         placeholder="Supplier Name"
                                         type="text"
-                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md    focus:border-blue-400focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                         required
                                     />
                                 </div>
@@ -116,7 +116,7 @@ const AddItems = () => {
                                     name="photoUrl"
                                     placeholder="https://example.png"
                                     type="text"
-                                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md    focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                     required
                                 />
                             </div>
@@ -136,7 +136,7 @@ const AddItems = () => {
                                         name="price"
                                         placeholder="Price"
                                         type="number"
-                                        className="block w-full  px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full  px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md    focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                         required
                                     />
                                 </div>
@@ -154,7 +154,7 @@ const AddItems = () => {
                                     <input
                                         name="quantity"
                                         type="number"
-                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md    focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                         required
                                     />
                                 </div>
@@ -173,7 +173,7 @@ const AddItems = () => {
                                         name="unit"
                                         placeholder="kg/L"
                                         type="text"
-                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md    focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                         required
                                     />
                                 </div>
@@ -196,7 +196,7 @@ const AddItems = () => {
                                     name="description"
                                     placeholder="Description"
                                     type="password"
-                                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md    focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                     required
                                 />
                             </div>

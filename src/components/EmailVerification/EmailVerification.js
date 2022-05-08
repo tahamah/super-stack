@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import auth from '../../Firebase/Firebase'
 import {
     useAuthState,
@@ -9,10 +9,9 @@ import { Navigate, useLocation } from 'react-router-dom'
 import PageTitle from '../PageTitle/PageTitle'
 
 const EmailVerification = () => {
-    const [sendEmailVerification, sending, error] =
-        useSendEmailVerification(auth)
+    const [sendEmailVerification] = useSendEmailVerification(auth)
 
-    const [user, loading, error2] = useAuthState(auth)
+    const [user] = useAuthState(auth)
     const location = useLocation()
 
     if (user?.emailVerified) {

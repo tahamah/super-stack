@@ -5,7 +5,7 @@ import auth from '../../Firebase/Firebase'
 import EmailVerification from '../EmailVerification/EmailVerification'
 import Spinner from '../Spinner/Spinner'
 const RequireAuth = ({ children }) => {
-    const [user, loading, error] = useAuthState(auth)
+    const [user, loading] = useAuthState(auth)
     const location = useLocation()
     if (loading) {
         return <Spinner />

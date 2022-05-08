@@ -45,10 +45,10 @@ const UpdateProduct = () => {
 
                             <div className="px-4 py-2 -mx-3">
                                 <div className="mx-3">
-                                    <span className="font-semibold text-emerald-500 dark:text-emerald-400">
+                                    <span className="font-semibold text-emerald-500 ">
                                         Success
                                     </span>
-                                    <p className="text-sm text-gray-600 dark:text-gray-200">
+                                    <p className="text-sm text-gray-600 ">
                                         Successfully Added!
                                     </p>
                                 </div>
@@ -71,10 +71,10 @@ const UpdateProduct = () => {
 
                     <div className="px-4 py-2 -mx-3">
                         <div className="mx-3">
-                            <span className="font-semibold text-red-500 dark:text-red-400">
+                            <span className="font-semibold text-red-500 ">
                                 Ops !
                             </span>
-                            <p className="text-sm text-gray-600 dark:text-gray-200">
+                            <p className="text-sm text-gray-600 ">
                                 Please Add a positive value!
                             </p>
                         </div>
@@ -115,10 +115,10 @@ const UpdateProduct = () => {
 
                             <div className="px-4 py-2 -mx-3">
                                 <div className="mx-3">
-                                    <span className="font-semibold text-emerald-500 dark:text-emerald-400">
+                                    <span className="font-semibold text-emerald-500 ">
                                         Success
                                     </span>
-                                    <p className="text-sm text-gray-600 dark:text-gray-200">
+                                    <p className="text-sm text-gray-600 ">
                                         One Product Delivered!
                                     </p>
                                 </div>
@@ -143,10 +143,10 @@ const UpdateProduct = () => {
 
                     <div className="px-4 py-2 -mx-3">
                         <div className="mx-3">
-                            <span className="font-semibold text-red-500 dark:text-red-400">
+                            <span className="font-semibold text-red-500 ">
                                 Ops !
                             </span>
-                            <p className="text-sm text-gray-600 dark:text-gray-200">
+                            <p className="text-sm text-gray-600 ">
                                 Stock is empty!
                             </p>
                         </div>
@@ -168,7 +168,7 @@ const UpdateProduct = () => {
         <div className="md:min-h-screen overflow-x-hidden pt-16 bg-[#03203C]">
             <PageTitle title={'Update Product'} />
             <ToastContainer />
-            <div className="max-w-lg  mx-4 md:mx-auto  bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div className="max-w-lg  mx-4 md:mx-auto  bg-white rounded-lg shadow-md">
                 <img
                     className="object-cover  w-full h-64"
                     src={img}
@@ -186,7 +186,7 @@ const UpdateProduct = () => {
                                 >
                                     <label
                                         htmlFor="username"
-                                        className="block text-sm text-gray-800 dark:text-gray-200"
+                                        className="block text-sm text-gray-800"
                                     >
                                         Product Name:
                                     </label>
@@ -195,7 +195,7 @@ const UpdateProduct = () => {
                                         placeholder="Product Name"
                                         type="text"
                                         value={product_name}
-                                        className="block w-full  px-4 py-2 mt-2 text-gray-700 bg-gray-100 border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full  px-4 py-2 mt-2 text-gray-700 bg-gray-100 border rounded-md    focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                         required
                                         readOnly
                                         disabled
@@ -208,7 +208,7 @@ const UpdateProduct = () => {
                                 >
                                     <label
                                         htmlFor="username"
-                                        className="block text-sm text-gray-800 dark:text-gray-200"
+                                        className="block text-sm text-gray-800 "
                                     >
                                         Supplier Name:
                                     </label>
@@ -233,7 +233,7 @@ const UpdateProduct = () => {
                                 >
                                     <label
                                         htmlFor="username"
-                                        className="block text-sm text-gray-800 dark:text-gray-200"
+                                        className="block text-sm text-gray-800 "
                                     >
                                         Quantity:
                                     </label>
@@ -254,7 +254,7 @@ const UpdateProduct = () => {
                                 >
                                     <label
                                         htmlFor="username"
-                                        className="block text-sm text-gray-800 dark:text-gray-200"
+                                        className="block text-sm text-gray-800 "
                                     >
                                         Price:
                                     </label>
@@ -275,7 +275,7 @@ const UpdateProduct = () => {
                                 >
                                     <label
                                         htmlFor="username"
-                                        className="block text-sm text-gray-800 dark:text-gray-200"
+                                        className="block text-sm text-gray-800 "
                                     >
                                         Add Quantity:
                                     </label>
@@ -287,7 +287,7 @@ const UpdateProduct = () => {
                                         name="addQuantity"
                                         placeholder="example 132"
                                         type="number"
-                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md   dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md    focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                         required
                                     />
                                 </div>
@@ -322,7 +322,7 @@ const UpdateProduct = () => {
                                 <div className="flex items-center justify-between">
                                     <label
                                         htmlFor="password"
-                                        className="block text-sm text-gray-800 dark:text-gray-200"
+                                        className="block text-sm text-gray-800 "
                                     >
                                         Description:
                                     </label>
@@ -334,7 +334,7 @@ const UpdateProduct = () => {
                                     value={body}
                                     type="text"
                                     rows="3"
-                                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-gray-100 border rounded-md   focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-gray-100 border rounded-md   focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                     required
                                     readOnly
                                     disabled
