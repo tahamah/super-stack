@@ -1,5 +1,6 @@
 import React from 'react'
 import PageTitle from '../PageTitle/PageTitle'
+import Footer from '../Footer/Footer'
 
 const Blogs = () => {
     return (
@@ -253,6 +254,7 @@ const Blogs = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import BeforeAfterSlider from 'react-before-after-slider'
+import Footer from '../Footer/Footer'
 import PageTitle from '../PageTitle/PageTitle'
 
 const SpecialDeal = () => {

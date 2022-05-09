@@ -125,8 +125,6 @@ const UpdateProduct = () => {
                             </div>
                         </div>
                     )
-
-                    console.log(json)
                 })
         } else {
             toast(
@@ -168,9 +166,9 @@ const UpdateProduct = () => {
         <div className="md:min-h-screen overflow-x-hidden pt-16 bg-[#03203C]">
             <PageTitle title={'Update Product'} />
             <ToastContainer />
-            <div className="max-w-lg  mx-4 md:mx-auto  bg-white rounded-lg shadow-md">
+            <div className="max-w-lg  mx-4 md:mx-auto  bg-[#120E43] rounded-lg shadow-md">
                 <img
-                    className="object-cover  w-full h-64"
+                    className="object-cover rounded-t-lg w-full h-64"
                     src={img}
                     alt="Article"
                 />
@@ -181,12 +179,13 @@ const UpdateProduct = () => {
                             <div className="md:flex ">
                                 <div
                                     className="md:w-1/2"
+                                    text-gray-200
                                     data-aos="fade-right"
                                     data-aos-duration="1000"
                                 >
                                     <label
                                         htmlFor="username"
-                                        className="block text-sm text-gray-800"
+                                        className="block text-sm text-gray-200"
                                     >
                                         Product Name:
                                     </label>
@@ -208,7 +207,7 @@ const UpdateProduct = () => {
                                 >
                                     <label
                                         htmlFor="username"
-                                        className="block text-sm text-gray-800 "
+                                        className="block text-sm text-gray-200 "
                                     >
                                         Supplier Name:
                                     </label>
@@ -233,7 +232,7 @@ const UpdateProduct = () => {
                                 >
                                     <label
                                         htmlFor="username"
-                                        className="block text-sm text-gray-800 "
+                                        className="block text-sm text-gray-200 "
                                     >
                                         Quantity:
                                     </label>
@@ -254,7 +253,7 @@ const UpdateProduct = () => {
                                 >
                                     <label
                                         htmlFor="username"
-                                        className="block text-sm text-gray-800 "
+                                        className="block text-sm text-gray-200 "
                                     >
                                         Price:
                                     </label>
@@ -275,7 +274,7 @@ const UpdateProduct = () => {
                                 >
                                     <label
                                         htmlFor="username"
-                                        className="block text-sm text-gray-800 "
+                                        className="block text-sm text-gray-200 "
                                     >
                                         Add Quantity:
                                     </label>
@@ -285,7 +284,7 @@ const UpdateProduct = () => {
                                         }
                                         id="addInput"
                                         name="addQuantity"
-                                        placeholder="example 132"
+                                        placeholder="example 32"
                                         type="number"
                                         className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md    focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                         required
@@ -322,7 +321,7 @@ const UpdateProduct = () => {
                                 <div className="flex items-center justify-between">
                                     <label
                                         htmlFor="password"
-                                        className="block text-sm text-gray-800 "
+                                        className="block text-sm text-gray-200 "
                                     >
                                         Description:
                                     </label>
