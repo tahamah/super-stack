@@ -34,7 +34,7 @@ const ManageAll = () => {
                 <Spinner />
             ) : (
                 <>
-                    <div className="py-20 bg-[#120E43] md:min-h-[110vh]">
+                    <div className="py-20 bg-[#120E43]  md:min-h-[110vh] overflow-hidden">
                         <ToastContainer />
                         <div className="mx-auto container bg-gray-800 text-gray-500 shadow rounded">
                             <div className="flex flex-col lg:flex-row p-4 lg:p-8 justify-between items-start lg:items-stretch w-full">
@@ -87,7 +87,7 @@ const ManageAll = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-full overflow-x-hidden ">
+                            <div className="w-full overflow-hidden ">
                                 <table className="min-w-full bg-white    ">
                                     <thead>
                                         <tr className="w-full h-16 border-gray-300  bg-gray-800  border-b py-8">

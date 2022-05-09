@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer'
 
 const Blogs = () => {
     return (
-        <div className="bg-[#03203C]">
+        <div className="bg-[#03203C] overflow-hidden">
             <PageTitle title={'Blogs'} />
             <div className="xl:w-1/2 mx-auto py-28 w-11/12">
                 <h1

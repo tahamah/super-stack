@@ -163,7 +163,7 @@ const UpdateProduct = () => {
             })
     }, [])
     return (
-        <div className="md:min-h-screen overflow-x-hidden pt-16 bg-[#03203C]">
+        <div className="md:min-h-screen overflow-hidden pt-16 bg-[#03203C]">
             <PageTitle title={'Update Product'} />
             <ToastContainer />
             <div className="max-w-lg  mx-4 md:mx-auto  bg-[#120E43] rounded-lg shadow-md">

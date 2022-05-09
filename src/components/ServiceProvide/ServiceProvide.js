@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServiceProvide = () => {
     return (
-        <div className="md:h-[110vh] overflow-x-hidden bg-[#011520]">
+        <div className="md:min:h-[110vh] overflow-hidden bg-[#011520]">
             <div
                 className="xl:px-20 px-6 py-20 xl:mx-auto xl:container"
                 data-aos="fade-up"

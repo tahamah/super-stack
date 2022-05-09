@@ -49,7 +49,7 @@ const MyItems = () => {
         }
     }
     return (
-        <div className="py-20 bg-[#120E43] md:min-h-[110vh]">
+        <div className="py-20 bg-[#120E43] md:min-h-[110vh] overflow-hidden">
             <PageTitle title={'My Items'} />
             <ToastContainer />
             <div className="mx-auto container bg-gray-800 text-gray-500 shadow rounded">
@@ -88,7 +88,7 @@ const MyItems = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full overflow-x-hidden ">
+                <div className="w-full overflow-hidden ">
                     <table className="min-w-full bg-white    ">
                         <thead>
                             <tr className="w-full h-16 border-gray-300  bg-gray-800  border-b py-8">

@@ -41,7 +41,7 @@ const AddItems = () => {
         })
     }
     return (
-        <div className="md:min-h-[130vh] -mt-[88px] overflow-x-hidden flex bg-[#03203C] align-center">
+        <div className="md:min-h-[130vh] -mt-[88px] overflow-hidden flex bg-[#03203C] align-center">
             <PageTitle title={'Add Items'} />
             <div className="md:w-1/2 w-full px-5 flex flex-col justify-between">
                 <div className="hidden md:block"></div>
@@ -55,7 +55,6 @@ const AddItems = () => {
                             Add New
                         </h1>
                         <ToastContainer />
-
                         <form onSubmit={handAdd} className="mt-6">
                             <div className="md:flex ">
                                 <div

@@ -2,7 +2,7 @@ import React from 'react'
 
 const StockGallery = () => {
     return (
-        <div className="md:h-[110vh] overflow-x-hidden bg-[#03203C] ">
+        <div className="md:min:h-[110vh] overflow-hidden pb-10 bg-[#03203C] ">
             <div className=" py-20 flex flex-col items-center justify-center">
                 <div className="xl:w-1/2 w-11/12">
                     <h1

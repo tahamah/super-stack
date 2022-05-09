@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div>
             <footer
-                className="bg-[#000000] overflow-x-hidden max-w-screen pt-20"
+                className="bg-[#000000] overflow-hidden max-w-screen pt-20"
                 data-aos="fade-up"
                 data-aos-duration="2000"
             >

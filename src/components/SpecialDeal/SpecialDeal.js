@@ -1,6 +1,5 @@
 import React from 'react'
 import BeforeAfterSlider from 'react-before-after-slider'
-import Footer from '../Footer/Footer'
 import PageTitle from '../PageTitle/PageTitle'
 
 const SpecialDeal = () => {
@@ -12,7 +11,7 @@ const SpecialDeal = () => {
     const after3 = 'https://i.ibb.co/Fxb2MFW/2.png'
 
     return (
-        <div className="md:h-[110vh] overflow-x-hidden bg-[#011520]">
+        <div className="md:min:h-[110vh] overflow-hidden pb-20 bg-[#011520]">
             <PageTitle title={'Special Deal'} />
             <div className="relative">
                 <h1
