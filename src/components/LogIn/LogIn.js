@@ -92,7 +92,7 @@ const LogIn = () => {
     }, [googleUser, user])
 
     return (
-        <section className=" md:h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#03203C]">
+        <section className=" md:min-h-[100vh] pt-32 px-8 pb-20 md:pt-44 bg-[#03203C]">
             <PageTitle title={'LogIn'} />
             <div className="flex max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg  lg:max-w-4xl">
                 <div

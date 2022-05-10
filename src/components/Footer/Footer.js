@@ -1,11 +1,21 @@
+import React from 'react'
 import { faBoxesStacked } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import ScrollToTop from 'react-scroll-to-top'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
         <div>
+            <ScrollToTop
+                style={{ backgroundColor: '#fff', paddingLeft: '8px' }}
+                smooth
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                svgPath="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"
+            />
+
             <footer
                 className="bg-[#000000] overflow-hidden max-w-screen pt-20"
                 data-aos="fade-up"
