@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 
 const Spinner = () => {
     return (
-        <div className="h-full overflow-hidden min-h-screen w-[100vw] bg-[#171C1D]">
+        <div className=" overflow-hidden min-h-screen max-w-screen bg-[#171C1D]">
             <Helmet>
                 <title>Loading . . . .</title>
             </Helmet>
