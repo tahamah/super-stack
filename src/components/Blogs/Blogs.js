@@ -91,7 +91,18 @@ const Blogs = () => {
             </section>
             <section className="text-gray-600  body-font overflow-hidden">
                 <div className="container px-5 py-24 mx-auto">
-                    <div className="lg:w-4/5 mx-auto md:flex justify-center items-center">
+                    <div className="lg:w-4/5 mx-auto md:flex md:flex-row-reverse justify-center items-center">
+                        <div
+                            className="lg:w-1/3"
+                            data-aos="fade-left"
+                            data-aos-duration="2000"
+                        >
+                            <img
+                                alt=""
+                                className="  object-cover object-center  rounded"
+                                src="https://i.ibb.co/bmdLCFb/blog-4.png"
+                            />
+                        </div>
                         <div className="lg:w-2/3 w-full lg:pr-10 lg:py-6 mt-6 lg:mt-0 ">
                             <h1
                                 className="text-gray-300 text-3xl title-font uppercase font-medium mb-4"
@@ -130,17 +141,6 @@ const Blogs = () => {
                                 {' '}
                                 See More...
                             </p>
-                        </div>
-                        <div
-                            className="lg:w-1/3"
-                            data-aos="fade-left"
-                            data-aos-duration="2000"
-                        >
-                            <img
-                                alt=""
-                                className="  object-cover object-center  rounded"
-                                src="https://i.ibb.co/bmdLCFb/blog-4.png"
-                            />
                         </div>
                     </div>
                 </div>
@@ -203,7 +203,18 @@ const Blogs = () => {
             </section>
             <section className="text-gray-600  body-font overflow-hidden">
                 <div className="container px-5 py-24 mx-auto">
-                    <div className="lg:w-4/5 mx-auto md:flex justify-center items-center">
+                    <div className="lg:w-4/5 mx-auto md:flex md:flex-row-reverse justify-center items-center">
+                        <div
+                            className="lg:w-1/3"
+                            data-aos="fade-left"
+                            data-aos-duration="2000"
+                        >
+                            <img
+                                alt=""
+                                className="  object-cover object-center  rounded"
+                                src="https://i.ibb.co/WPjL4Tt/blog-2.png"
+                            />
+                        </div>
                         <div className="lg:w-2/3 w-full lg:pr-10 lg:py-6 mt-6 lg:mt-0">
                             <h1
                                 className="text-gray-300 text-3xl title-font font-medium mb-4"
@@ -239,17 +250,6 @@ const Blogs = () => {
                                 {' '}
                                 See More...
                             </p>
-                        </div>
-                        <div
-                            className="lg:w-1/3"
-                            data-aos="fade-left"
-                            data-aos-duration="2000"
-                        >
-                            <img
-                                alt=""
-                                className="  object-cover object-center  rounded"
-                                src="https://i.ibb.co/WPjL4Tt/blog-2.png"
-                            />
                         </div>
                     </div>
                 </div>
